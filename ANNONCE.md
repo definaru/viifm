@@ -1,6 +1,3 @@
-<!---
-[![The Azure Gate of Time](https://viifm.art/data/image/f994ed8bd117be0a149363d45ca190d2.jpg)](https://t.me/viifm_lux/475)
--->
 ![The Azure Gate of Time](https://viifm.art/data/image/353425643654364456___.jpg)
 
 Скоро на Vii FM 
@@ -8,9 +5,13 @@
 # "The Azure Gate of Time"
 
 <!---
+[![The Azure Gate of Time](https://viifm.art/data/image/f994ed8bd117be0a149363d45ca190d2.jpg)](https://t.me/viifm_lux/475)
+
+Вышел сборник на Vii FM 
+
+# ["The Azure Gate of Time"](https://t.me/viifm_lux/475)
 
 ---
-# ["The Azure Gate of Time"](https://t.me/viifm_lux/475)
 
 - ### Thomas J. Curran
   Enchanted Forest _(Test feat. You)_
