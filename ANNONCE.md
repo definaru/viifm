@@ -1,9 +1,8 @@
-![The Azure Gate of Time](https://viifm.art/data/image/353425643654364456___.jpg)
+[![The Azure Gate of Time](https://viifm.art/data/image/353425643654364456___.jpg)][1]
 
 Скоро на Vii FM
 
-# "The Azure Gate of Time"
-
+# ["The Azure Gate of Time"][1]
 <!---
 [![The Azure Gate of Time](https://viifm.art/data/image/f994ed8bd117be0a149363d45ca190d2.jpg)](https://t.me/viifm_lux/475)
 
@@ -44,3 +43,4 @@
   Far Over the Highlands
 -->
 
+[1]: https://t.me/viifm_lux
