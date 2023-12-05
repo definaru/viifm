@@ -4,7 +4,6 @@
 
 # "The Azure Gate of Time"
 
-
 <!---
 [![The Azure Gate of Time](https://viifm.art/data/image/f994ed8bd117be0a149363d45ca190d2.jpg)](https://t.me/viifm_lux/475)
 
