@@ -38,37 +38,6 @@
 
 <!---
 Вышел сборник на Vii FM 
-
-
-- ### Thomas J. Curran
-  Enchanted Forest
-
-- ### Tartalo Music
-  Journey Through the Highlands
-
-- ### Riikka
-  Sinuun Jäin
-
-- ### James Newton Howard
-  Fairy Dance
-
-- ### Fox Amoore
-  The Voice of Sinnah
-
-- ### Celestial Aeon Project
-  Misty Mountains
-
-- ### Caroline Lavelle
-  Moorlough Shore
-
-- ### Ari Pulkkinen
-  The Redwood Forest
-
-- ### Bonnie Grace
-  A Celtic Blessing
-
-- ### Christoffer Moe Ditlevsen
-  Far Over the Highlands
 -->
 
 [1]: https://t.me/viifm_lux
