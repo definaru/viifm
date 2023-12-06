@@ -1,6 +1,10 @@
 [![The Azure Gate of Time](https://viifm.art/data/image/353425643654364456___.jpg)][1]
 
+Вышел сборник на Vii FM 
+
+<!---
 Скоро на Vii FM
+-->
 
 # ["The Azure Gate of Time"][1]
 
@@ -36,8 +40,5 @@
 - ### Enigma
   Push The Limits
 
-<!---
-Вышел сборник на Vii FM 
--->
 
 [1]: https://t.me/viifm_lux/488
