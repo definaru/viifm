@@ -3,7 +3,7 @@
 Скоро на Vii FM
 
 <!---
-Вышел сборник на Vii FM
+Вышел сборник на Vii FM 
 -->
 
 # ["Flying Above The Earth"][1]
