@@ -1,13 +1,13 @@
-[![The Azure Gate of Time](https://viifm.art/data/image/353425643654364456___.jpg)][1]
+[![Flying Above The Earth](https://viifm.art/data/image/35345436465.jpg)][1]
 
-Вышел сборник на Vii FM 
+Скоро на Vii FM
 
 <!---
-Скоро на Vii FM
+Вышел сборник на Vii FM
 -->
 
-# ["The Azure Gate of Time"][1]
-
+# ["Flying Above The Earth"][1]
+<!---
 ---
 
 - ### Ambeon
@@ -39,6 +39,6 @@
 
 - ### Enigma
   Push The Limits
+-->
 
-
-[1]: https://t.me/viifm_lux/488
+[1]: https://t.me/viifm_lux
