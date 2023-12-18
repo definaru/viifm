@@ -1,40 +1,40 @@
-[![Flying Above The Earth](https://viifm.art/data/image/35345436465.jpg)][1]
+[![A powerful impulse of delight](https://sun9-40.userapi.com/impf/c849532/v849532024/10c97/nG1XtlmXsGU.jpg?size=1366x1366&quality=96&sign=1f601449666d1bedff2b0e2e518215fe&type=album)][1]
 
-Вышел сборник на Vii FM
+Скоро на Vii FM
 
-# ["Flying Above The Earth"][1]
+# ["A powerful impulse of delight"][1]
 
 ---
 
-- ### Allegra Lusini
-  Purification
+- ### Eriq Johnson, AVO
+  Hypnotic
 
-- ### Jack DT
-  Calling Angel
+- ### Gregorian
+  Join Me _(Schill out Version)_
 
-- ### Solarstone & Hannah Magenta
-  Swansong _(EA3 Reconstruction)_
+- ### Delerium
+  Eternal Odyssey
 
-- ### Oscuro, BlauDisS
-  Where Did You Go?
+- ### Enigma
+  Out from the Deep _(Short radio edit)_
 
-- ### Dal. P
-  She just wants to Rock`n`roll
+- ### Celtic Dreamer feat Dorothy
+  Bonny Portmore _(Chillout Remix)_
 
-- ### Made Of Light
-  Tears of ice
+- ### Andain
+  Much Too Much
 
-- ### IOTO
-  New Horizons
+- ### Freud
+  The Journey
 
-- ### Carlos Estella
-  Pandora
+- ### Shinnobu
+  The Man
 
-- ### Wuauquikuna
-  Mother Earth
+- ### AMIYA ft.Jens Gad
+  Her Power
 
-- ### John Adorney
-  Waiting for the Moon
+- ### Lagu Andy Leech x Fyze
+  Alchemy
+
   
-
-[1]: https://t.me/viifm_lux/509
+[1]: https://t.me/viifm_lux
