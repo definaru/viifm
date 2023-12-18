@@ -4,10 +4,17 @@
     $this->params['breadcrumbs'][] = $this->title;
     $collections = [
         [
+            'id' => 23,
+            'image' => '/data/image/35345436465.jpg',
+            'tags' => ['#newage', '#fly', '#relax', '#freedom'],
+            'name' => 'Flying Above The Earth',
+            'url' => 'https://t.me/viifm_lux/509'
+        ],
+        [
             'id' => 22,
             'image' => 'https://viifm.art/data/image/353425643654364456___.jpg',
             'tags' => ['#newage', '#trip', '#ambient'],
-            'name' => 'The Moonlight Forest Trail',
+            'name' => 'The Azure Gate of Time',
             'url' => ''
         ],
         [
@@ -132,31 +139,59 @@
         ],
         [
             'id' => 18,
-            'image' => 'https://cdn4.cdn-telegram.org/file/R-VOEFgClyNl_KSXSQkIUKZlawmwrb6EULpk10LvWRev9f5h62XHyv908hkPttDOrCWZ1GD00oHszpq4EvedELSXSA7gRcJi_ln4aEY2UcoBcPEoJ9Yy1N7BrYLWZT0dJ2R3zthvt9CXjNrQfolQ6bNxCwCBFKvyUXbxBKA66oa9bP4ChSYPDCWY81pq8MfEoW4SB7f_ViNpak6dQtjpiv4dGzMTL_51c6SDxIfh6YurbyPXA_Uy2tiWCxvy0SfxzHRJXOr_5Mi4RKxIWceuWeqGbvgvDSZASGsxtv7eeFRKHgaT77QvtxitcPcYOVXdS23y5Nhl4_vF8Hv-C8Ptzw.jpg',
+            'image' => '/data/image/54363544657547686867.jpg',
             'tags' => ['#newage', '#music', '#immersion', '#love'],
             'name' => 'Full Immersion',
             'url' => 'https://t.me/viifm_lux/62'
         ],
         [
             'id' => 19,
-            'image' => 'https://cdn4.cdn-telegram.org/file/gFfTKvDuR1csvVkX62rMg39mqPw9q8BWIRXoCksWJEpGo4windho3ZlV-4KMMplMFcFmKQSAqJT1WRJC7lrYmIQbamSSbqWrbHnIEZDYigPngnYRJ1rEjr9mwL2s1WhVq4db9SKltyX2eHfQ3hlbguVWSKg7W5NVLOZXsNDxdok_jg8vxXRUqCphK2O34StDz1gf34a8C850AzLyUl2jSJFr_Ba878Q3jEAV2JFwnQkDcCYcxnUi27QQlIsg5s-Joh3ifuxH93HjOAI0kHFVNuA8MXyJmamNrSibRloGQiuke0pfIG_hWUz_vgW3pnEPesOK12M-vcnm6ZauP5CHtw.jpg',
+            'image' => '/data/image/36347664364253452.jpg',
             'tags' => ['#newage', '#music', '#pleasure'],
             'name' => 'Make Your Choice',
             'url' => 'https://t.me/viifm_lux/80'
         ],
         [
             'id' => 20,
-            'image' => 'https://cdn4.cdn-telegram.org/file/BkFceNRYAq7LTKvW8wP_IOSLGxCPWPyUNUh54eWnOCDCILEvwG5v0JEMivltKYTjFiOLmrk-BdxzRQuT6xhtTGITuGXRxEk1DKjqSfvw-rmLwSwBjodj_HRdrRT_jtaDoQZt_OPMYckYp2iAKEDTFLt_W4aYGHi8RxXrFpkowCGyMIxCdJrNIMLZ8Phhr-_jGWf9LXp6AYmlcVUfGVkVXP6d8COcJ__zIfWszuVNJgQbtIhfqFw3SxSXtaH_Qe1Mga59byq4fjCL73BFrVfGjYGIUnD_mRm_fbEMVWrCT8caXoDPVQc6OxFfZCv25iqDi2-sK_FpB5luEuHdOjU53g.jpg',
+            'image' => '/data/image/533465475464362346.jpg',
             'tags' => ['#newage', '#music', '#passion', '#love'],
             'name' => 'Ghostly Shadows',
             'url' => 'https://t.me/viifm_lux/94'
         ],
         [
-            'id' => 21,
-            'image' => 'https://cdn4.cdn-telegram.org/file/m6aWPMw3k3Et_Xl79en_nIvEa36fmSjPLN8593pWyTt5QShrKo0b5UfWOB2Zp-lwoOBagc-kRcnXWoAIufZ_qy47snrb0asEtyKMWmAYbBGKNjipO9gJRy5rBob5Wup4K25AK1gJOV3lclRaT3UKGXJ6DvBo1noPSOT_a9hCw-y9NcrzT3f27_qSvWH2kJTSAmoPN4XycVanpJQk9GSeLkhXXDpBWCSFtJS_eEhG9Om9A8bZbpRtU2j2ObqYuxXJQUbmcv1Cq9f8WqsvbxooZ4HinHscjLyIdxfCuJvS6DBu5Dy7kpB5T8rkQLnh4kY1yaSIRWF-0EmbzZ8n37I2EA.jpg',
+            'id' => 24,
+            'image' => '/data/image/4625463546546.jpg',
             'tags' => ['#newage', '#relax', '#ambient', '#fly', '#dreams', '#love'],
             'name' => 'Road To Sunset',
             'url' => 'https://t.me/viifm_lux/110'
+        ],
+        [
+            'id' => 25,
+            'image' => '/data/image/3513464654656.jpg',
+            'tags' => ['#newage', '#music', '#rays_of_love', '#passion'],
+            'name' => 'Rays Of Love',
+            'url' => 'https://t.me/viifm_lux/12'
+        ],
+        [
+            'id' => 26,
+            'image' => '/data/image/4364565474563.jpg',
+            'tags' => ['#enigmatic', '#newage', '#sex', '#ambient'],
+            'name' => '2045',
+            'url' => 'https://t.me/viifm_lux/34'
+        ],
+        [
+            'id' => 27,
+            'image' => '/data/image/3223543451535225.jpg',
+            'tags' => ['#enigmatic', '#newage', '#ambient'],
+            'name' => 'A Kiss Of Tenderness',
+            'url' => 'https://t.me/viifm_lux/51'
+        ],
+        [
+            'id' => 28,
+            'image' => '/data/image/43624652346436254.jpg',
+            'tags' => ['#newage', '#ethnic', '#meditation', '#calmness', '#relaxation', '#pleasure'],
+            'name' => 'Open Channel For Meditation',
+            'url' => 'https://t.me/viifm_lux/282'
         ]
     ];
 ?>
