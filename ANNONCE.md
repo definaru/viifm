@@ -1,40 +1,40 @@
-[![A powerful impulse of delight](https://sun9-40.userapi.com/impf/c849532/v849532024/10c97/nG1XtlmXsGU.jpg?size=1366x1366&quality=96&sign=1f601449666d1bedff2b0e2e518215fe&type=album)][1]
+[![The Secret Fantasy](https://viifm.art/data/image/Eswwz9YYtsQ.jpg)][1]
 
 Скоро на Vii FM
 
-# ["A powerful impulse of delight"][1]
+# ["The Secret Fantasy"][1]
 
 ---
 
-- ### Eriq Johnson, AVO
-  Hypnotic
+- ### ATB
+  Peace = Illusion
 
-- ### Gregorian
-  Join Me _(Schill out Version)_
+- ### Hana
+  Ayume
 
-- ### Delerium
-  Eternal Odyssey
+- ### D.Batistatos
+  In the Bottom of the Ocean
 
-- ### Enigma
-  Out from the Deep _(Short radio edit)_
+- ### Fred Baker
+  A Reason To Love
 
-- ### Celtic Dreamer feat Dorothy
-  Bonny Portmore _(Chillout Remix)_
+- ### Xlarve
+  Dream Field - Wild Nature (Beauty Chillout Mix)
 
-- ### Andain
-  Much Too Much
+- ### Ascent And Argus
+  Whisper
 
-- ### Freud
-  The Journey
+- ### Cardamar
+  Obscure Scenery
 
-- ### Shinnobu
-  The Man
+- ### Reasonandu
+  Sibyl's Vision
 
-- ### AMIYA ft.Jens Gad
-  Her Power
+- ### Armada Lounge
+  Crawling
 
-- ### Lagu Andy Leech x Fyze
-  Alchemy
+- ### Ummet Ozcan & Otyken
+  Altay
 
   
 [1]: https://t.me/viifm_lux
