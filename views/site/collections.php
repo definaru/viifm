@@ -2,7 +2,35 @@
     use yii\helpers\Html;
     $this->title = 'Сборники';
     $this->params['breadcrumbs'][] = $this->title;
+
+    $url = 'https://viifm.art';
+    $description = 'Вся коллекция сборников нашего канала';
+
+    $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'сборник, music, vii, enigma, achiella']);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+    
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    //$this->registerMetaTag(['property' => 'og:image', 'content' => $url.'/data/image/4418680adaabd3b1f5.jpg']);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]); 
+
     $collections = [
+        [
+            'id' => 30,
+            'image' => 'https://viifm.art/data/image/Eswwz9YYtsQ.jpg',
+            'tags' => ['#newage', '#secret', '#enigmatic', '#fantasy', '#wow'],
+            'name' => 'The Secret Fantasy',
+            'url' => 'https://t.me/viifm_lux/550'
+        ],
+        [
+            'id' => 29,
+            'image' => '/data/image/nG1XtlmXsGU.jpg',
+            'tags' => ['#newage', '#fly', '#relax', '#enigmatic', '#nostalgy', '#wow'],
+            'name' => 'A powerful impulse of delight',
+            'url' => 'https://t.me/viifm_lux/538'
+        ],
         [
             'id' => 23,
             'image' => '/data/image/35345436465.jpg',
@@ -45,7 +73,6 @@
             'name' => 'Harmony',
             'url' => 'https://t.me/viifm_lux/438'
         ],
-
         [
             'id' => 5,
             'image' => 'https://avatars.mds.yandex.net/get-altay/9837233/2a0000018a84c56c7f64ee0604490b772254/XXXL',
@@ -197,7 +224,7 @@
 ?>
 <div class="row">
     <div class="col-md-8 offset-md-2 my-3">
-        <?=Html::tag('h2', $this->title, ['class' => 'display-5 text-center mb-5']);?>
+        <?=Html::tag('h2', $this->title, ['class' => 'display-5 text-center mb-md-3 mb-5']);?>
     </div>
 </div>
 <div class="row g-3 mb-5 pb-5">

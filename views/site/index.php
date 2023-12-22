@@ -10,6 +10,7 @@
     $this->registerMetaTag(['name' => 'keywords', 'content' => 'music, vii, enigma, era, enya, gregorian, achiella']);
     $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
     
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
     $this->registerMetaTag(['property' => 'og:title', 'content' => 'Vii FM. Красивая музыка']);
     $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
     $this->registerMetaTag(['property' => 'og:image', 'content' => $url.'/data/image/353425643654364456___.jpg']);

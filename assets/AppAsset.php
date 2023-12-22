@@ -14,11 +14,12 @@ class AppAsset extends AssetBundle
     public $css = [
         'data/css/defina.min.css',
     ];
-    public $js = [
-        'data/js/defina.min.js'
-    ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap5\BootstrapAsset',
+        'yii\\bootstrap5\\BootstrapPluginAsset'
     ];
+    public $js = [
+        'data/js/defina.min.js'
+    ];    
 }

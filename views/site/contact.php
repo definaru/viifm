@@ -1,14 +1,29 @@
 <?php
     use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
-    use yii\captcha\Captcha;
 
     $this->title = 'Контакты';
     $this->params['breadcrumbs'][] = $this->title;
+
+    $url = 'https://viifm.art';
+    $description = 'Контактная информация';
+
+    $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'контакты, music, vii, enigma, achiella']);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+    
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => 'Vii FM. Красивая музыка']);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    //$this->registerMetaTag(['property' => 'og:image', 'content' => $url.'/data/image/353425643654364456___.jpg']);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);
+
     $items = [
         'Размещение рекламы на канале' => 'Размещение рекламы на канале',
         'Жалоба или замечаниe' => 'Жалоба или замечаниe',
         'Предложение и пожелание'=> 'Предложение и пожелание',
+        'Вопросы по товарам'=> 'Вопросы по товарам',
+        'Вопросы по услугам'=> 'Вопросы по услугам',
         'Другое'=> 'Другое'
     ];
     //  offset-md-3

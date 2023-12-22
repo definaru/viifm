@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /login
+Disallow: /signup
+ 
+User-agent: Yandex
+Disallow: /login
+Disallow: /signup
+
+Host: viifm.art
+ 
+Sitemap: https://viifm.art/sitemap.xml

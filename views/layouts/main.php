@@ -14,6 +14,7 @@
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <meta name="author" content="Ray Vaigmi" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="yandex-verification" content="934be1dcd43724ac" />
 	<meta property="og:site_name" content="Telegram канал" />

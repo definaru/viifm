@@ -313,6 +313,20 @@ a.desc:after {
 	a.nav-link {
 		font-size: 20px;
 	}
+    .promotions {
+        height: 250px;
+        margin-top: 20px;
+    }
+    .promotions img {
+        width: 100%;
+    }
+    .image-flame hr {
+        width: 100%;
+    }
+    .prevew img {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 }
 
 #yii-debug-toolbar {

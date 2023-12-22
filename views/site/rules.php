@@ -2,9 +2,22 @@
     use yii\helpers\Html;
     $this->title = 'Правила канала';
     $this->params['breadcrumbs'][] = $this->title;
+    
+    $url = 'https://viifm.art';
+    $description = 'Перечень правил, которые рекомендуется соблюдать на нашем канале.';
     $intellektualnaa = 'https://www.eesti.ee/ru/predprinimatel/intellektualnaa-sobstvennost/zasita-intellektualnoj-sobstvennosti#лицензии-и-тарифы-для-публичного-показа-защищенных-авторским-правом-музыкальных-произведений';
     $author_rules = 'https://www.consultant.ru/document/cons_doc_LAW_10699/b683408102681707f2702cff05f0a3025daab7ab/';
     $koap = 'https://www.consultant.ru/document/cons_doc_LAW_34661/d40cbd099d17057d9697b15ee8368e49953416ae/';
+
+    $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'правила, канал, music, vii, enigma, achiella']);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+    
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    //$this->registerMetaTag(['property' => 'og:image', 'content' => $url.'/data/image/4418680adaabd3b1f5.jpg']);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);    
 ?>
 <div class="row">
     <div class="col-md-8 offset-md-2 my-5 pb-5">

@@ -97,6 +97,11 @@ class SiteController extends Controller
         return $this->render('agreement');
     }
 
+    public function actionPromotions()
+    {
+        return $this->render('promotions');
+    }
+
 
     /**
      * Logs in a user.
