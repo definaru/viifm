@@ -1,6 +1,6 @@
 [![The Secret Fantasy](https://viifm.art/data/image/Eswwz9YYtsQ.jpg)][1]
 
-Скоро на Vii FM
+Вышел сборник на Vii FM
 
 # ["The Secret Fantasy"][1]
 
