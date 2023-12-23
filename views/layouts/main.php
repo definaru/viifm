@@ -97,7 +97,17 @@
         <?= Alert::widget() ?>
         <?= $content ?>
         <div class="col-md-12 text-center py-5">
-            <iframe src="https://yandex.ru/sprav/widget/rating-badge/237084092601?type=rating&theme=dark" width="150" height="50" frameborder="0"></iframe>
+            <a 
+                target="_blank" 
+                class="btn btn-light gap-2 d-inline-flex align-items-center px-4"
+                href="//yandex.ru/maps/org/237084092601/reviews?utm_source=badge&utm_medium=rating&utm_campaign=v1" 
+                rel="noopener noreferrer"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                </svg>
+                Оставить отзыв
+            </a>
         </div>
     </div>
 </main>
@@ -112,7 +122,6 @@
                 <img src="/data/image/payment/visa.svg" alt="visa" style="width: 50px" />
                 <img src="/data/image/payment/amex.svg" alt="amex" style="width: 50px" />
                 <img src="/data/image/payment/discover.svg" alt="discover" style="width: 50px" />
-                <img src="/data/image/payment/elo.svg" alt="elo" style="width: 50px" class="d-none d-md-flex" />
                 <img src="/data/image/payment/maestro.svg" alt="maestro" style="width: 50px" />
                 <img src="/data/image/payment/mastercard.svg" alt="mastercard" style="width: 50px" />
                 <img src="/data/image/payment/paypal.svg" alt="paypal" style="width: 50px" />

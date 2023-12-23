@@ -79,7 +79,7 @@
                             aria-controls="collapseExample"
                             style="cursor: help"
                         >
-                            <span data-bs-toggle="tooltip" data-bs-title="Подробности">голос</span>
+                            <a href="#collapseExample" data-bs-toggle="tooltip" data-bs-title="Подробности">голос</a>
                         </u>
                         <span 
                             data-bs-toggle="tooltip" 
@@ -90,7 +90,7 @@
                     </strong> 
                     <div class="d-flex gap-2 gap-md-4 align-items-center flex-column flex-md-row">
                         <hr />
-                        <span class="fs-4">3 месяца</span> 
+                        <span class="fs-4">3 мес.</span> 
                         <span class="badge text-bg-primary fw-light">premium</span>
                         <div>
                             <span class="text-warning">
@@ -122,91 +122,21 @@
                     </div>
                 </div>
             </li>
-            <li class="card image-flame my-md-5 my-2">
-                <div class="card-body flex-column flex-md-row position-relative z-3 d-flex justify-content-between align-items-center">
-                    <strong class="d-flex align-items-center gap-2">
-                        <span class="fs-3">50</span> подписчиков
-                        <span 
-                            data-bs-toggle="tooltip" 
-                            data-bs-title="Всего мест осталось"
-                            class="badge rounded-pill text-bg-danger" 
-                            role="button"
-                        >1 место</span>
-                    </strong> 
-                    <div class="d-flex gap-2 gap-md-4 align-items-center flex-column flex-md-row">
-                        <hr />
-                        <span class="fs-4">3 месяца</span> 
-                        <span class="badge text-bg-primary fw-light">premium</span> 
-                        <div>
-                            <span class="text-warning">
-                                <?php for ($i = 1; $i <= 3; $i++) { ?>
-                                    <?=$starfill;?>
-                                <?php } ?>
-                            </span>  
-                            <span class="text-muted">
-                                <?php for ($i = 1; $i <= 9; $i++) { ?>
-                                    <?=$star;?>
-                                <?php } ?>                            
-                            </span>                            
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="card image-flame my-md-5 my-2">
-                <div class="card-body flex-column flex-md-row position-relative z-3 d-flex justify-content-between align-items-center">
-                    <strong class="d-flex align-items-center gap-2">
-                        <span class="fs-3">100</span> подписчиков
-                        <span 
-                            data-bs-toggle="tooltip" 
-                            data-bs-title="Всего мест осталось"
-                            class="badge rounded-pill text-bg-danger" 
-                            role="button"
-                        >1 место</span>
-                    </strong> 
-                    <div class="d-flex gap-2 gap-md-4 align-items-center flex-column flex-md-row">
-                        <hr />
-                        <span class="fs-4">6 месяцев</span> 
-                        <span class="badge text-bg-primary fw-light">premium</span> 
-                        <div>
-                            <span class="text-warning">
-                                <?php for ($i = 1; $i <= 6; $i++) { ?>
-                                    <?=$starfill;?>
-                                <?php } ?>
-                            </span>  
-                            <span class="text-muted">
-                                <?php for ($i = 1; $i <= 6; $i++) { ?>
-                                    <?=$star;?>
-                                <?php } ?>                            
-                            </span>                            
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="card image-flame my-md-5 my-2">
-                <div class="card-body flex-column flex-md-row position-relative z-3 d-flex justify-content-between align-items-center">
-                    <strong class="d-flex align-items-center gap-2">
-                        <span class="fs-3">250</span> подписчиков
-                        <span 
-                            data-bs-toggle="tooltip" 
-                            data-bs-title="Всего мест осталось"
-                            class="badge rounded-pill text-bg-danger" 
-                            role="button"
-                        >5 мест</span>
-                    </strong>
-                    <div class="d-flex gap-2 gap-md-4 align-items-center flex-column flex-md-row">
-                        <hr />
-                        <span class="fs-4">1 год</span> 
-                        <span class="badge text-bg-primary fw-light">premium</span> 
-                        <div>
-                            <span class="text-warning">
-                                <?php for ($i = 1; $i <= 12; $i++) { ?>
-                                    <?=$starfill;?>
-                                <?php } ?>
-                            </span>                          
-                        </div>
-                    </div>
-                </div>
-            </li>
+            <?=$this->render('_card', [
+                'followers' => 50,
+                'season' => 3,
+                'places' => '1 место'
+            ]);?>
+            <?=$this->render('_card', [
+                'followers' => 100,
+                'season' => 6,
+                'places' => '1 место'
+            ]);?>
+            <?=$this->render('_card', [
+                'followers' => 250,
+                'season' => 12,
+                'places' => '5 мест'
+            ]);?>
         </ul>
     </div>
     <div class="col-md-12">
@@ -216,5 +146,13 @@
         использовать можно только её, иначе подписчики не засчитаются и вы не сможете доказать, 
         что этих подписчиков привели именно ВЫ. Мы лояльно относимся к тем, кто активно продвигает наш
         канал, поэтому подарок может быть выдан, даже если был недобор.
+    </div>
+
+
+
+    <div class="container py-5 mt-5">     
+        <div class="row">
+            <?=$this->render('_promo');?>
+        </div>
     </div>
 </div>
