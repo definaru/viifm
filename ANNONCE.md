@@ -1,40 +1,8 @@
-[![The Secret Fantasy](https://viifm.art/data/image/Eswwz9YYtsQ.jpg)][1]
+[![Create At Least A Small Miracle](https://viifm.art/data/image/4632576547547547.jpg)][1]
 
-Вышел сборник на Vii FM
+Скоро на Vii FM
 
-# ["The Secret Fantasy"][1]
+# ["Create At Least A Small Miracle"][1]
 
----
 
-- ### ATB
-  Peace = Illusion
-
-- ### Hana
-  Ayume
-
-- ### D.Batistatos
-  In the Bottom of the Ocean
-
-- ### Fred Baker
-  A Reason To Love
-
-- ### Xlarve
-  Dream Field - Wild Nature (Beauty Chillout Mix)
-
-- ### Ascent And Argus
-  Whisper
-
-- ### Cardamar
-  Obscure Scenery
-
-- ### Reasonandu
-  Sibyl's Vision
-
-- ### Armada Lounge
-  Crawling
-
-- ### Kris Kylven feat. Sub-Sonic
-  Drift
-
-  
-[1]: https://t.me/viifm_lux/550
+[1]: https://t.me/viifm_lux
