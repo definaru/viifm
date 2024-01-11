@@ -1,40 +1,37 @@
-[![Create At Least A Small Miracle](https://viifm.art/data/image/4632576547547547.jpg)][1]
+[![Real Sadness & Other Gregorian Mysteries](https://lastfm.freetls.fastly.net/i/u/ar0/0e68a307694145d3bdb2afd882d5a18e.jpg)][1]
 
-Вышел сборник на Vii FM
+Скоро на Vii FM
 
-# ["Create At Least A Small Miracle"][1]
+# ["Real Sadness & Other Gregorian Mysteries"][1]
 
 ---
 
-- ### Michael Stearns
-  Organics
+- ### Nostradamus
+  Sadeness Part I
   
-- ### Enigma
-  Gravity Of Love
+- ### Gregoria
+  The Rhythm
   
-- ### Jens Buchert
-  After Desert
+- ### Prayers
+  Alleluia
    
-- ### Asura
-  El Hai _(Vocals - Ayten)_
+- ### Physical Motion
+  Ave Maria
    
-- ### Germind & Eguana feat. Anna Miracles
-  Happy Night _(Original Mix 2016)_
+- ### Ars Mundi
+  Inquisitio
    
-- ### Miyagi
-  The Wooden Bridge
+- ### Magna Charta
+  Hymn
    
-- ### Shinnobu
-  Mystical Santo
+- ### Equinox
+  Amen Part II
    
-- ### Funky Sidechain feat Anna Miracles
-  Hot Passions Of Love _(Radar Detector Remix)_
+- ### Trance Dance
+  Tales Of Mystery _(Darkness Version)_
    
-- ### Kris Kylven & Syb-Sonic
-  Inner City Angels
-   
-- ### Michael Stearns
-  Finale 
+- ### After One
+  Real Sadness II _(The Happiness Rap)_ 
   
   
-[1]: https://t.me/viifm_lux/571
+[1]: https://t.me/viifm_lux
