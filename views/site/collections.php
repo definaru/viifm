@@ -228,9 +228,12 @@
     </div>
 </div>
 <div class="row g-3 mb-5 pb-5">
-    <?php foreach($collections as $item) { ?>
+    <?php arsort($model); foreach($model as $item) { ?>
     <div class="col-12 col-md-4">
-        <?=Html::img($item['image'], ['class' => 'w-100 rounded', 'loading'=> "lazy", 'alt' => $item['name']]);?>     
+        <a href="<?=$item['url'];?>" target="_blank" rel="noopener noreferrer">
+            <?=Html::img($item['image'], ['class' => 'w-100 rounded', 'loading'=> "lazy", 'alt' => $item['name']]);?> 
+        </a>
     </div>
     <?php } ?>
+    <pre><?php //var_dump($model);?></pre>
 </div>

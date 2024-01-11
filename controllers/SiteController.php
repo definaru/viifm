@@ -15,10 +15,10 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use frontend\models\Collections;
+use frontend\models\Shop;
 
-/**
- * Site controller
- */
+
 class SiteController extends Controller
 {
     /**
@@ -89,7 +89,9 @@ class SiteController extends Controller
 
     public function actionCollections()
     {
-        return $this->render('collections');
+        
+        $model = Collections::find()->orderBy('LENGTH(uid), uid')->asArray()->all();
+        return $this->render('collections', ['model' => $model]);
     }
 
     public function actionAgreement()
@@ -160,21 +162,20 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
+
     public function actionAbout()
     {
         return $this->render('about');
     }
 
-    /**
-     * Signs user up.
-     *
-     * @return mixed
-     */
+
+    public function actionShop()
+    {
+        $model = Shop::find()->asArray()->all();
+        return $this->render('shop', ['model' => $model]);
+    }
+
+    
     public function actionSignup()
     {
         $model = new SignupForm();

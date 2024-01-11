@@ -46,11 +46,7 @@
     $menuItems = [
         ['label' => 'Сборники', 'url' => ['/site/collections']],
         ['label' => 'Правила канала', 'url' => ['/site/rules']],
-        [
-            'label' => 'Знакомства', 
-            'url' => 'https://t.me/+ny1CHvzjR6Q0MGMy',
-            'linkOptions' => ['target'=>'_blank']
-        ],
+        ['label' => 'Магазин', 'url' => ['/site/shop']],
         [
             'label' => 'Блог', 
             'url' => 'https://vc.ru/u/2294632-vii-fm-krasivaya-muzyka',
@@ -96,6 +92,7 @@
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+        <?php if(Yii::$app->controller->action->id !== 'error') : ?>
         <div class="col-md-12 text-center py-5">
             <a 
                 target="_blank" 
@@ -109,6 +106,7 @@
                 Оставить отзыв
             </a>
         </div>
+        <?php endif; ?>
     </div>
 </main>
 
