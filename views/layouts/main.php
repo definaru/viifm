@@ -52,6 +52,11 @@
             'url' => 'https://vc.ru/u/2294632-vii-fm-krasivaya-muzyka',
             'linkOptions' => ['target'=>'_blank']
         ],
+        [
+            'label' => 'Знакомства', 
+            'url' => 'https://t.me/vii_chats',
+            'linkOptions' => ['target'=>'_blank']
+        ],
         ['label' => 'Контакты', 'url' => ['/site/contact']],
     ];
     // if (Yii::$app->user->isGuest) {
@@ -131,6 +136,11 @@
         </div>
     </div>
 </footer>
+
+<?php /*
+Мы используем cookies для сбора обезличенных персональных данных. Они помогают настраивать рекламу и анализировать трафик. 
+Оставаясь на сайте, вы соглашаетесь на сбор таких данных.
+*/ ?>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >

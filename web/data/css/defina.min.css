@@ -204,6 +204,7 @@ a.desc:after {
 .akcent {
     background: linear-gradient(45deg, #d11031 33%, #c925d1 66%, #4067f8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #15202b;
 }
