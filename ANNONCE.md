@@ -1,4 +1,4 @@
-[![Real Sadness & Other Gregorian Mysteries](https://lastfm.freetls.fastly.net/i/u/ar0/0e68a307694145d3bdb2afd882d5a18e.jpg)][1]
+[![Real Sadness & Other Gregorian Mysteries](https://viifm.art/data/image/31923948_800_800.jpg)][1]
 
 Скоро на Vii FM
 
