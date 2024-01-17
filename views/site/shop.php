@@ -7,6 +7,20 @@
     $url = 'https://viifm.art';
     $description = 'Товары и услуги на Vii FM';
     $promo = 'https://wa.me/79998492927?text=Здравствуйте.%20Хочу%20получить%20ПРОМОКОД';
+
+    $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'наушники, электрогитара, микрофон']);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    $this->registerMetaTag(['property' => 'og:image', 'content' => $url.'/data/image/favicon.png']);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);
+    
+    $this->registerMetaTag(['name' => 'theme-color', 'content' => $color]);
+    $this->registerMetaTag(['name' => 'msapplication-navbutton-color', 'content' => $color]);
+    $this->registerMetaTag(['name' => 'apple-mobile-web-app-status-bar-style', 'content' => $color]);
     setlocale(LC_MONETARY, 'ru_RU');
 ?>
 <div class="row g-3 align-items-center my-5 pb-5">

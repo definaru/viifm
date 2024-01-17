@@ -20,9 +20,10 @@
     $this->registerMetaTag(['name' => 'msapplication-navbutton-color', 'content' => $color]);
     $this->registerMetaTag(['name' => 'apple-mobile-web-app-status-bar-style', 'content' => $color]);
 ?>
+
 <div class="site-index">
     <div class="mb-5 bg-transparent">
-        <div class="container py-0 py-md-5">
+        <div class="atropos viis container py-0 py-md-5">
             <div class="row align-items-center py-2 py-md-5">
                 <div class="col-12 col-md-6 d-grid gap-5">
                     <h1 class="display-3 fw-bold m-0">Vii FM. <span class="text-body-tertiary">Красивая музыка</span></h1>
@@ -43,19 +44,23 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 text-center position-relative py-5 py-md-0">
-                    <div class="image-flame">
-                        <?=Html::img(
-                            '/data/image/phone.png', [
-                                'alt' => $this->title,
-                                'class' => 'w-75 mobile position-relative z-2'
-                            ]
-                        );?>
+                    <div class="atropos-scale">
+                        <div class="atropos-rotate">
+                            <div class="atropos-inner image-flame">
+                                <?=Html::img(
+                                    '/data/image/phone.png', [
+                                        'alt' => $this->title,
+                                        'class' => 'w-75 mobile position-relative z-2',
+                                        'data-atropos-offset' => '-10'
+                                    ]
+                                );?>                                  
+                            </div> 
+                        </div>
                     </div>
                 </div> 
             </div>
         </div>
     </div>
-
     <?=$this->render('_features');?>
 
     <div class="container py-5 mt-5">     
@@ -66,3 +71,18 @@
         </div>
     </div>
 </div>
+
+<script type="module">
+    import Atropos from 'https://cdn.jsdelivr.net/npm/atropos@2/atropos.min.mjs'
+
+    const myAtropos = Atropos({
+        el: '.viis',
+        //activeOffset: 40,
+        shadowScale: 2.05
+    });
+    const best = Atropos({
+        el: '.best',
+        activeOffset: 40,
+        shadowScale: 2.05
+    });
+</script>

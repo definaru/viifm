@@ -58,44 +58,58 @@
     <div class="col-md-5">
         <div class="card p-md-5 p-2 image-flame">
             <div class="card-body position-relative z-3">
-                <?php $form = ActiveForm::begin([
-                    'id' => 'contact-form',
-                    'enableAjaxValidation'   => true,
-                    'validateOnBlur'         => false,
-                    'validateOnType'         => false,
-                    'validateOnSubmit'       => false
-                ]); ?>
-                    <?= $form->field($model, 'name')->textInput(['placeholder' => 'Ваше имя'])->label(false);?>
-                    <?= $form->field($model, 'email')->textInput([
-                        'placeholder' => 'Ваш e-mail', 
-                        'autocomplete' => 'off'
-                    ])->label(false);?>
-                    <?= $form->field($model, 'subject')->dropDownList($items, ['prompt' => 'Тема обращения...'])->label(false);?>
-                    <?= $form->field($model, 'body')->textarea(['placeholder' => 'Сообщение...', 'rows' => 6])->label(false);?>
-                    <!-- $form->field($model, 'verifyCode')->widget(Captcha::class, [
-                        'template' => '<div class="row d-flex align-items-center">
-                            <div class="col-lg-3">{image}</div>
-                            <div class="col-lg-5">{input}</div>
-                            <div class="col-lg-4 d-grid">'.Html::submitButton(
-                                'Отправить', 
-                                ['class' => 'btn btn-lg btn-light', 'name' => 'contact-button']
-                            ).'</div>
-                        </div>',
-                        'options' => ['placeholder' => 'Введите код капчи...'],
-                    ])->label(false);?> -->
-                    <div class="d-grid text-center gap-3">
-                        <?=Html::submitButton(
-                            'Отправить', 
-                            ['class' => 'btn btn-lg btn-vii', 'name' => 'contact-button']
-                        );?>  
-                        <small>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
-                            </svg>
-                            Ваши данные защищены. Мы не занимаемся распространением персональных данных.
-                        </small>                      
+                <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
+                    <div class="alert alert-success text-center border-0 m-0 d-inline-flex justify-content-center align-items-center gap-2 w-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"></path>
+                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+                        </svg>
+                        <strong>Успешно</strong> 
+                        <span>Сообщение получено</span>
                     </div>
-                <?php ActiveForm::end(); ?>        
+                <?php else: ?>
+                    <?php $form = ActiveForm::begin([
+                        'id' => 'contact-form',
+                        'enableAjaxValidation'   => true,
+                        'validateOnBlur'         => false,
+                        'validateOnType'         => false,
+                        'validateOnSubmit'       => false
+                    ]); ?>
+                        <?= $form->field($model, 'name')->textInput(['placeholder' => 'Ваше имя'])->label(false);?>
+                        <?= $form->field($model, 'email')->textInput([
+                            'placeholder' => 'Ваш e-mail', 
+                            'autocomplete' => 'off'
+                        ])->label(false);?>
+                        <?= $form->field($model, 'subject')->dropDownList($items, ['prompt' => 'Тема обращения...'])->label(false);?>
+                        <?= $form->field($model, 'body')->textarea(['placeholder' => 'Сообщение...', 'rows' => 6])->label(false);?>
+                        <!-- $form->field($model, 'verifyCode')->widget(Captcha::class, [
+                            'template' => '<div class="row d-flex align-items-center">
+                                <div class="col-lg-3">{image}</div>
+                                <div class="col-lg-5">{input}</div>
+                                <div class="col-lg-4 d-grid">'.Html::submitButton(
+                                    'Отправить', 
+                                    ['class' => 'btn btn-lg btn-light', 'name' => 'contact-button']
+                                ).'</div>
+                            </div>',
+                            'options' => ['placeholder' => 'Введите код капчи...'],
+                        ])->label(false);?> 
+                    currentColor
+                    -->
+                        <div class="d-grid text-center gap-3">
+                            <?=Html::submitButton(
+                                'Отправить', 
+                                ['class' => 'btn btn-lg btn-vii', 'name' => 'contact-button']
+                            );?>  
+                            <small>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#83C933" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                                </svg>
+                                Ваши данные защищены. Мы не занимаемся распространением персональных данных.
+                            </small>                      
+                        </div>
+                    <?php ActiveForm::end(); ?>                     
+                <?php endif ; ?> 
+       
             </div>
         </div>
     </div>

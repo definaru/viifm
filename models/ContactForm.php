@@ -5,9 +5,8 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 
-/**
- * ContactForm is the model behind the contact form.
- */
+
+
 class ContactForm extends Model
 {
     public $name;
@@ -17,9 +16,6 @@ class ContactForm extends Model
     //public $verifyCode;
 
 
-    /**
-     * {@inheritdoc}
-     */
     public function rules()
     {
         return [
@@ -34,9 +30,7 @@ class ContactForm extends Model
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     public function attributeLabels()
     {
         return [
@@ -44,20 +38,58 @@ class ContactForm extends Model
         ];
     }
 
-    /**
-     * Sends an email to the specified email address using the information collected by this model.
-     *
-     * @param string $email the target email address
-     * @return bool whether the email was sent
-     */
+
+    public static function layout($name, $email, $text, $subject)
+    {
+        $msd = '<b>Новое сообщение #'.time().'</b>'.PHP_EOL.
+            '<i>'.$name.'</i>'.PHP_EOL.
+            '<i>'.$email.'</i>'.PHP_EOL.
+            '<b>'.$subject.'</b>'.PHP_EOL.
+            '<pre>'.$text.'</pre>';
+        return $msd;
+    }
+
+    public static function getMessageTelegram($name, $email, $text, $subject)
+    {
+        $msd = self::layout($name, $email, $text, $subject);
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.telegram.org/bot'.env('TELEGRAM_TOKEN').'/sendMessage',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => 'text='.urlencode($msd).'&chat_id='.env('TELEGRAM_ID').'&parse_mode=HTML',
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/x-www-form-urlencoded'
+            ),
+        ));
+        $response = curl_exec($curl);
+        curl_close($curl);
+        return $response;
+    }
+
     public function sendEmail($email)
     {
-        return Yii::$app->mailer->compose()
-            ->setTo($email)
-            ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
-            ->setReplyTo([$this->email => $this->name])
-            ->setSubject($this->subject)
-            ->setTextBody($this->body)
+        if ($this->validate()) {
+            $bot = self::getMessageTelegram($this->name, $this->email, $this->body, $this->subject);
+            return Yii::$app->mailer->compose()
+                ->setTo($email)
+                ->setFrom([Yii::$app->params['senderEmail'] => Yii::$app->params['senderName']])
+                // Yii::$app->params['senderEmail']
+                //->setFrom([$this->email => $this->name])
+                ->setSubject($this->subject)
+                ->setHtmlBody('<div>
+                    <h4>'.$this->name.'</h4>
+                    <p>От: <a href="mailto:'.$this->email.'">'.$this->email.'</a></p>
+                    <pre>'.$this->body.'</pre>
+                </div>')
             ->send();
+            return $bot;
+        }
+        return false; 
     }
 }

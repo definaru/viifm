@@ -24,6 +24,7 @@
 	
 	<link rel="icon" href="/favicon.ico" />
     <link rel="shortcut icon" href="/data/image/favicon.png" type='image/x-icon' />
+    <link href="/data/image/logo/vii-fm.jpg" rel="apple-touch-icon" />
 	<link rel="preconnect" href="https://mc.yandex.ru" />
 	
     <?php $this->head() ?>
@@ -35,7 +36,7 @@
 <header>
     <?php 
     NavBar::begin([
-        'brandLabel' => Html::img('/data/image/logo.png', ['class' => 'logo-icon', 'alt' => Yii::$app->name]).
+        'brandLabel' => Html::img('/data/image/logo.png', ['class' => 'logo-icon ms-2', 'alt' => Yii::$app->name]).
                         Html::img('/data/image/logoname.png', ['class' => 'logo', 'alt' => Yii::$app->name]),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
