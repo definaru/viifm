@@ -1,4 +1,5 @@
 [Подробнее о виниловой пластинке](https://viifm.art/vinill)
+
 [![Real Sadness & Other Gregorian Mysteries](https://viifm.art/data/image/31923948_800_800.jpg)][1]
 
 Скоро на Vii FM
