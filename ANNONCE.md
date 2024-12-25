@@ -1,39 +1,40 @@
-[Подробнее о виниловой пластинке](https://viifm.art/vinill)
-
-[![Real Sadness & Other Gregorian Mysteries](https://viifm.art/data/image/31923948_800_800.jpg)][1]
+[![The Source Of Life](https://viifm.art/data/image/tsol-4654758769767545.jpg)][1]
 
 Скоро на Vii FM
 
-# ["Real Sadness & Other Gregorian Mysteries"][1]
+# ["The Source Of Life"][1]
 
 ---
 
-- ### Nostradamus
-  Sadeness Part I
+- ### Robert Gass
+  Ancient Mother
   
-- ### Gregoria
-  The Rhythm
+- ### Porte 
+  Mea Memoria
   
-- ### Prayers
-  Alleluia
+- ### Michael Maas, Alina Lesnik
+  Small Fairy Tales
    
-- ### Physical Motion
-  Ave Maria
+- ### Snatam Kaur
+  Mul Mantra
    
-- ### Ars Mundi
-  Inquisitio
+- ### Amethystium
+  Shadow to Light
    
-- ### Magna Charta
-  Hymn
+- ### ERA
+  Misere Mani
    
-- ### Equinox
-  Amen Part II
+- ### Mike Oldfield
+  Tubular World
    
-- ### Trance Dance
-  Tales Of Mystery _(Darkness Version)_
+- ### Shinnobu, Entsury 
+  By Peace
    
-- ### After One
-  Real Sadness II _(The Happiness Rap)_ 
+- ### Easy Project
+  One Voice One Soul
+
+- ### Light of Aidan
+  Loving You _(Ft. Note for a Child)_
   
   
 [1]: https://t.me/viifm_lux
