@@ -1,40 +1,41 @@
-[![The Source Of Life](https://viifm.art/data/image/tsol-4654758769767545.jpg)][1]
+[![Voice Of Memory: A Spark Of Horizon](https://viifm.art/data/image/voma-34644563463356.jpg)][1]
 
 Скоро на Vii FM
 
-# ["The Source Of Life"][1]
+# ["Voice Of Memory: A Spark Of Horizon"][1]
 
 ---
 
-- ### Robert Gass
-  Ancient Mother
+- ### Dido
+  Here With Me
   
-- ### Porte 
-  Mea Memoria
+- ### VARGO 
+  You're Not Alone
   
-- ### Michael Maas, Alina Lesnik
-  Small Fairy Tales
+- ### Opus III
+  It's a Fine Day
    
-- ### Snatam Kaur
-  Mul Mantra
-   
-- ### Amethystium
-  Shadow to Light
-   
-- ### ERA
-  Misere Mani
-   
-- ### Mike Oldfield
-  Tubular World
-   
-- ### Shinnobu, Entsury 
-  By Peace
-   
-- ### Easy Project
-  One Voice One Soul
+- ### MALINDA
+  Galway Girl
 
-- ### Light of Aidan
-  Loving You _(Ft. Note for a Child)_
+- ### DJ Sammy, Yanou & Do
+  Heaven
+   
+- ### Lasgo
+  Something
+   
+- ### Sylver
+  Forgiven
+   
+- ### Kosheen
+  Catch
+   
+- ### Chimera State & Lety
+  Necessary _(Chillout Mix)_
+   
+- ### Ingo Herrmann, Department 27, Helmut Sickinger
+  Go Away
+
   
   
-[1]: https://t.me/viifm_lux/1050
+[1]: https://t.me/viifm_lux
