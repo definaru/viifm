@@ -1,6 +1,6 @@
 [![Voice Of Memory: A Spark Of Horizon](https://viifm.art/data/image/voma-34644563463356.jpg)][1]
 
-Скоро на Vii FM
+Новый сборник на Vii FM
 
 # ["Voice Of Memory: A Spark Of Horizon"][1]
 
@@ -38,4 +38,4 @@
 
   
   
-[1]: https://t.me/viifm_lux
+[1]: https://t.me/viifm_lux/1063
