@@ -1,41 +1,41 @@
-[![Voice Of Memory: A Spark Of Horizon](https://viifm.art/data/image/voma-34644563463356.jpg)][1]
+[![Ghostly Shadows](https://viifm.art/data/image/gs-465473575634426.jpg)][1]
 
-Новый сборник на Vii FM
+Скоро на Vii FM
 
-# ["Voice Of Memory: A Spark Of Horizon"][1]
+# ["Ghostly Shadows"][1]
 
 ---
 
-- ### Dido
-  Here With Me
+- ### Frank Borell
+  Epic Dreams _(Fifty Shades Of Dreams Mix)_
   
-- ### VARGO 
-  You're Not Alone
+- ### Angels of Venice 
+  Queen of the sun
   
-- ### Opus III
-  It's a Fine Day
+- ### Alanis Morissette
+  Versions of Violence
    
-- ### MALINDA
-  Galway Girl
+- ### Hexperos
+  A Reason To Live
 
-- ### DJ Sammy, Yanou & Do
-  Heaven
+- ### Delerium, Sarah McLachlan, Airscape
+  Silence _(Airscape Remix Edit)_
    
-- ### Lasgo
-  Something
+- ### Mixina
+  Lluny De Mi
    
-- ### Sylver
-  Forgiven
+- ### Moonrunner83, Megan McDuffee
+  Streets
    
-- ### Kosheen
-  Catch
+- ### Jens Buchert
+  The Vortex
    
-- ### Chimera State & Lety
-  Necessary _(Chillout Mix)_
+- ### Madis
+  Desert Of Lost Souls
    
-- ### Ingo Herrmann, Department 27, Helmut Sickinger
-  Go Away
+- ### The Connected Mind
+  Flow With Me _(The Connected Mind)_
 
   
   
-[1]: https://t.me/viifm_lux/1063
+[1]: https://t.me/viifm_lux
