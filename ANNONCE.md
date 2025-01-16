@@ -1,6 +1,6 @@
 [![Ghostly Shadows](https://viifm.art/data/image/gs-465473575634426.jpg)][1]
 
-Скоро на Vii FM
+Новый сборник на Vii FM
 
 # ["Ghostly Shadows"][1]
 
