@@ -1,41 +1,42 @@
-[![Ghostly Shadows](https://viifm.art/data/image/gs-465473575634426.jpg)][1]
+[![Full Immersion](https://viifm.art/data/image/46433243646436325.jpg)][1]
 
-Новый сборник на Vii FM
+Скоро на Vii FM
 
-# ["Ghostly Shadows"][1]
+# ["Full Immersion"][1]
 
 ---
 
-- ### Frank Borell
-  Epic Dreams _(Fifty Shades Of Dreams Mix)_
-  
-- ### Angels of Venice 
-  Queen of the sun
-  
-- ### Alanis Morissette
-  Versions of Violence
-   
-- ### Hexperos
-  A Reason To Live
+- ### Nigel Stanford
+  Crystal Skies
 
-- ### Delerium, Sarah McLachlan, Airscape
-  Silence _(Airscape Remix Edit)_
-   
-- ### Mixina
-  Lluny De Mi
-   
-- ### Moonrunner83, Megan McDuffee
-  Streets
-   
-- ### Jens Buchert
-  The Vortex
-   
-- ### Madis
-  Desert Of Lost Souls
-   
-- ### The Connected Mind
-  Flow With Me _(The Connected Mind)_
+- ### Sundial Aeon
+  Stratospheric Polar _(Clouds Original Mix)_
 
-  
-  
-[1]: https://t.me/viifm_lux/1074
+- ### Lukas Termena, Chillbrothers feat. Angelica Borof
+  Infinity
+
+- ### Nikonn, Maria Papadopoulou
+  Inside
+
+- ### Gary B
+  Stronger Love
+
+- ### Steen Thottrup
+  In the Palm of Your Hand
+
+- ### Almadrava
+  Facing Limits
+
+- ### Nacho Sotomayor, Alana Sinkëy, Francisco Sotomayor
+  Streets of Philadelphia _(In love mix)_
+
+- ### Enigma
+  Gravity Of Love
+
+- ### Lesiem
+  Temperantia
+
+
+
+
+[1]: https://t.me/viifm_lux
