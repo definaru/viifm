@@ -1,6 +1,6 @@
 [![Full Immersion](https://viifm.art/data/image/46433243646436325.jpg)][1]
 
-Скоро на Vii FM
+Новый сборник на Vii FM
 
 # ["Full Immersion"][1]
 
