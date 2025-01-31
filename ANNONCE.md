@@ -1,4 +1,4 @@
-[![The Tale Of The Mysterious Maiden](https://viifm.art/data/image/collections/TheTaleOfTheMysteriousMaiden.jpg)][1]
+[![The Tale Of The Mysterious Maiden](https://viifm.art/data/image/TheTaleOfTheMysteriousMaiden.jpg)][1]
 
 Новый сборник на Vii FM
 
