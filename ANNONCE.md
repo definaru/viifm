@@ -1,42 +1,42 @@
-[![Full Immersion](https://viifm.art/data/image/46433243646436325.jpg)][1]
+[![The Tale Of The Mysterious Maiden](https://viifm.art/data/image/collections/TheTaleOfTheMysteriousMaiden.jpg)][1]
 
 Новый сборник на Vii FM
 
-# ["Full Immersion"][1]
+# ["The Tale Of The Mysterious Maiden"][1]
 
 ---
 
-- ### Nigel Stanford
-  Crystal Skies
-
-- ### Sundial Aeon
-  Stratospheric Polar _(Clouds Original Mix)_
-
-- ### Lukas Termena, Chillbrothers feat. Angelica Borof
-  Infinity
-
-- ### Nikonn, Maria Papadopoulou
-  Inside
-
-- ### Gary B
-  Stronger Love
-
-- ### Steen Thottrup
-  In the Palm of Your Hand
-
-- ### Almadrava
-  Facing Limits
-
-- ### Nacho Sotomayor, Alana Sinkëy, Francisco Sotomayor
-  Streets of Philadelphia _(In love mix)_
+- ### Psy`Aviah
+  Seven Sorrows, Seven Stars
 
 - ### Enigma
-  Gravity Of Love
+  Almost Full Moon
 
-- ### Lesiem
-  Temperantia
+- ### Sandra
+  Forgive Me _(Chill Out Radio Edit)_
+
+- ### Miriam Stockley
+  Mercy Street
+
+- ### Amethystium
+  Autumn Interlude
+
+- ### Solarsoul, Kristin Amarie
+  Hope Never Dies _(Vocal Mix)_
+
+- ### AKOVIANI
+  Aya
+
+- ### R.I.B., Seven24, Soty
+  Perfect Day
+
+- ### Mimi Page
+  Come What May
+
+- ### Balligomingo
+  Beyond - Balligomingo
 
 
 
 
-[1]: https://t.me/viifm_lux/1086
+[1]: https://t.me/viifm_lux/1097
