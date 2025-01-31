@@ -34,7 +34,7 @@
   Come What May
 
 - ### Balligomingo
-  Beyond - Balligomingo
+  Beyond
 
 
 
