@@ -1,6 +1,6 @@
 [![A light flirtation of the full moon](https://viifm.art/data/image/collections/46598365636596539038.jpg)][1]
 
-Скоро на Vii FM
+Новое на Vii FM
 
 # ["A Light Flirtation Of The Full Moon"][1]
 
