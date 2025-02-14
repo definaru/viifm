@@ -2,7 +2,7 @@
 
 Скоро на Vii FM
 
-# ["A light flirtation of the full moon"][1]
+# ["A Light Flirtation Of The Full Moon"][1]
 
 ---
 
@@ -36,4 +36,4 @@
 
 
 
-[1]: https://t.me/viifm_lux
+[1]: https://t.me/viifm_lux/1124
