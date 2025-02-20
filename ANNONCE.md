@@ -1,39 +1,42 @@
-[![A light flirtation of the full moon](https://viifm.art/data/image/collections/46598365636596539038.jpg)][1]
+[![The Awakening Of Power](https://viifm.art/data/image/collections/4636536546.jpg)][1]
 
-Новое на Vii FM
+Скоро на Vii FM
 
-# ["A Light Flirtation Of The Full Moon"][1]
+# ["The Awakening Of Power"][1]
 
 ---
 
-- ### Anima Infinity
-  Place Of Silence
+- ### Rhythms of the World
+  Mystical & Powerful Nordic Shamanic Music _(Captivating Women Chants, Rhythmical Viking Atmosphere)_
 
-- ### Maridis
-  Take A Look
+- ### Tal Barr
+  Mothers
 
-- ### Longniter, and Kamala
-  Pictures of you
+- ### Songleikr
+  Mann og mening
 
-- ### Living Room
-  Go Lounging
+- ### Mists of Serenity
+  Fearless
 
-- ### Ensoul
-  Perfect Days
+- ### Pawl D Beats, Askadia
+  Landvaettir
 
-- ### Aithra
-  Feel Free
+- ### Jonna Jinton
+  The Frozen Call
 
-- ### Catchy Tongue
-  Stardiver
+- ### Kalandra
+  Mørke Skoger _(Extended)_
 
-- ### Melange`n Marsh
-  Do you love me
+- ### Andrea Krux
+  Dreams of Hope
 
-- ### ToniT, Catchy Tongue
-  Dream Of Time
+- ### Elysia Draxon
+  The Starless Horizon
+
+- ### Mists of Serenity
+  Resilience
 
 
 
 
-[1]: https://t.me/viifm_lux/1124
+[1]: https://t.me/viifm_lux
