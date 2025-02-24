@@ -1,6 +1,6 @@
-[![The Awakening Of Power](https://viifm.art/data/image/collections/4636536546.jpg)][1]
+Новое на Vii FM
 
-Скоро на Vii FM
+[![The Awakening Of Power](https://viifm.art/data/image/collections/4636536546.jpg)][1]
 
 # ["The Awakening Of Power"][1]
 
@@ -39,4 +39,4 @@
 
 
 
-[1]: https://t.me/viifm_lux
+[1]: https://t.me/viifm_lux/1140
