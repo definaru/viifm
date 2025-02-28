@@ -1,42 +1,43 @@
 Новое на Vii FM
 
-[![The Awakening Of Power](https://viifm.art/data/image/collections/4636536546.jpg)][1]
+[![Circles On The Water Of The Universe](https://viifm.art/data/image/collections/circles-4363457547437.jpg)][1]
 
-# ["The Awakening Of Power"][1]
+
+# ["Circles On The Water Of The Universe"][1]
 
 ---
 
-- ### Rhythms of the World
-  Mystical & Powerful Nordic Shamanic Music _(Captivating Women Chants, Rhythmical Viking Atmosphere)_
+- ### Kamikaze Kitty
+  Moving Mountains
 
-- ### Tal Barr
-  Mothers
+- ### Black Hydra
+  Honour
 
-- ### Songleikr
-  Mann og mening
+- ### Mark Petrie
+  Cerulean
 
-- ### Mists of Serenity
-  Fearless
+- ### David Chappell, Efisio Cross
+  Terra Aeterna
 
-- ### Pawl D Beats, Askadia
-  Landvaettir
+- ### Dos Brains
+  Entropy
 
-- ### Jonna Jinton
-  The Frozen Call
+- ### KAYNAH
+  Arise
 
-- ### Kalandra
-  Mørke Skoger _(Extended)_
+- ### NINJA TRACKS
+  Origins
 
-- ### Andrea Krux
-  Dreams of Hope
+- ### Gothic Storm
+  Can`t Hide from Truth
 
-- ### Elysia Draxon
-  The Starless Horizon
+- ### Peter Roe
+  We Marched
 
-- ### Mists of Serenity
-  Resilience
-
-
+- ### Randall Jermaine, Alexa Ray, Atom Music Audio
+  Eternal Flame
 
 
-[1]: https://t.me/viifm_lux/1140
+
+
+[1]: https://t.me/viifm_lux
