@@ -1,43 +1,43 @@
 Новое на Vii FM
 
-[![Circles On The Water Of The Universe](https://viifm.art/data/image/collections/circles-4363457547437.jpg)][1]
+[![The Scent Of The Awakening Earth](https://viifm.art/data/image/collections/The_Scent24363465.jpg)][1]
 
 
-# ["Circles On The Water Of The Universe"][1]
+# ["The Scent Of The Awakening Earth"][1]
 
 ---
 
-- ### Kamikaze Kitty
-  Moving Mountains
+- ### MDNA, James Deep, Rainshow, Nassri
+  Seed of Love
 
-- ### Black Hydra
-  Honour
+- ### Sferix, Sine - BelieveSferix, Sine
+  Believe
 
-- ### Mark Petrie
-  Cerulean
+- ### Whitewildbear
+  Bright
 
-- ### David Chappell, Efisio Cross
-  Terra Aeterna
+- ### Balligomingo
+  Purify
 
-- ### Dos Brains
-  Entropy
+- ### Rocker C
+  Believing
 
-- ### KAYNAH
-  Arise
+- ### ATB
+  The Autumn Leaves
 
-- ### NINJA TRACKS
-  Origins
+- ### Chilled Ice
+  Chasing Dreams
 
-- ### Gothic Storm
-  Can`t Hide from Truth
+- ### Dieez, KASIMOFF, Ömer Said
+  Enigma
 
-- ### Peter Roe
-  We Marched
+- ### Cynosure
+  Enigma in My Heart
 
-- ### Randall Jermaine, Alexa Ray, Atom Music Audio
-  Eternal Flame
-
-
+- ### Suleymer
+  Amame Yo
 
 
-[1]: https://t.me/viifm_lux/1151
+
+
+[1]: https://t.me/viifm_lux
