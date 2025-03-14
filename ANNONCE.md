@@ -1,6 +1,6 @@
 Новое на Vii FM
 
-[![Treasures Of The Night](https://viifm.art/data/image/collections/totn436326446.jpg)[1]]
+[![Treasures Of The Night](https://viifm.art/data/image/collections/totn436326446.jpg)][1]
 
 
 # ["Treasures Of The Night"][1]
