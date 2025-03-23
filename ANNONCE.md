@@ -1,43 +1,43 @@
-Новое на Vii FM
+Скоро на Vii FM
 
-[![Treasures Of The Night](https://viifm.art/data/image/collections/totn436326446.jpg)][1]
+[![The Lure Of Caramel Exotica](https://viifm.art/data/image/collections/the_lure_352356ut576u73.jpg)][1]
 
 
-# ["Treasures Of The Night"][1]
+# ["The Lure Of Caramel Exotica"][1]
 
 ---
 
-- ### Nacho Sotomayor
-  Drama of Japan
+- ### Wuauquikuna
+  Mother Earth
 
-- ### Vlastur, Meghdeep Bose
-  Dunya Yunis _(Meghdeep Bose Rework)_
+- ### Himekami
+  Goddess of White Mountain
+
+- ### Gitche Manitou
+  Call of the Wild
+
+- ### Oliver Shanti
+  Sacral Nirvana
+
+- ### Narcotic Chill
+  Beauty Of Nature _(Original Mix)_
+
+- ### Hevia
+  Busindre Reel
+
+- ### Deep Forest, Eric Mouquet and Michel Sanchez
+  Nigh Bird _(Version 1992)_
+
+- ### Nada
+  Rajamati
 
 - ### Ishvari
-  Lost in Love
+  To My Groom
 
-- ### Delerium, Kiran Arwuhalia
-  Indoctrination
-
-- ### Harri Agnel
-  The Prophecy
-
-- ### Aakarshan
-  Tantra Cafe
-
-- ### KVPV
-  Shaman _(Original Mix)_
-
-- ### Cheb i Sabbah
-  Qalanderi
-
-- ### Rajneesh
-  Tantra _(Slumdog Millionaire Dub)_
-
-- ### Julilea, Jack Center
-  Goddess Power
+- ### Solyma
+  Solyma _(Jerusalem)_
 
 
 
 
-[1]: https://t.me/viifm_lux/1188
+[1]: https://t.me/viifm_lux
