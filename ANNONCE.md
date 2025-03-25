@@ -1,4 +1,4 @@
-Скоро на Vii FM
+Новое на Vii FM
 
 [![The Lure Of Caramel Exotica](https://viifm.art/data/image/collections/the_lure_352356ut576u73.jpg)][1]
 
