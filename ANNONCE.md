@@ -1,43 +1,43 @@
 Новое на Vii FM
 
-[![The Lure Of Caramel Exotica](https://viifm.art/data/image/collections/the_lure_352356ut576u73.jpg)][1]
+[![The Glow Inside Of Us](https://viifm.art/data/image/collections/486701944_1222085432610715_4575141708735444856_n.jpg)][1]
 
 
-# ["The Lure Of Caramel Exotica"][1]
+# ["The Glow Inside Of Us"][1]
 
 ---
 
-- ### Wuauquikuna
-  Mother Earth
+- ### Zetandel, Victoria Mishchenko
+  Don`t Judge Me _(Original Mix)_
 
-- ### Himekami
-  Goddess of White Mountain
+- ### YORK, The Thrillseekers, Asheni
+  Daydream _(York`s Album Mix)_
 
-- ### Gitche Manitou
-  Call of the Wild
+- ### Sevara Nazarkhan
+  Meni Sev
 
-- ### Oliver Shanti
-  Sacral Nirvana
+- ### Andain, Zetandel
+  Much Too Much _(Zetandel Chill Remix)_
 
-- ### Narcotic Chill
-  Beauty Of Nature _(Original Mix)_
+- ### Paul Oakenfold, Kilanova, Aisha Vaughan
+  Ordinary World
 
-- ### Hevia
-  Busindre Reel
+- ### Klangwald
+  Someone Like You
 
-- ### Deep Forest, Eric Mouquet and Michel Sanchez
-  Nigh Bird _(Version 1992)_
+- ### Vinny Troia, Jaidene Veda
+  Do For Love _(Mike Hiratzka Downtempo Remix)_
 
-- ### Nada
-  Rajamati
+- ### KAYNAH
+  Hold Fast
 
-- ### Ishvari
-  To My Groom
+- ### Jam & Spoon, and Plavka
+  Blue Moon Tidal
 
-- ### Solyma
-  Solyma _(Jerusalem)_
-
-
+- ### Aquascape
+  Sunrise in Fog
 
 
-[1]: https://t.me/viifm_lux/1200
+
+
+[1]: https://t.me/viifm_lux/1213
