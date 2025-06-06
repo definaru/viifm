@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viifm.art/sitemap.xml

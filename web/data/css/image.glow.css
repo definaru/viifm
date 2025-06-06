@@ -1,0 +1,18 @@
+.glow-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(40px);
+    opacity: 0.9;
+}
+.next img {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.next p {
+    position: relative;
+}
