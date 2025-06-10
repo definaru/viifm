@@ -5,33 +5,38 @@
     use yii\bootstrap5\Html;
     use common\widgets\Alert;
     use frontend\assets\AppAsset;
-    use frontend\components\helpers\domain\Site;
+    //use frontend\components\helpers\domain\Site;
 
     AppAsset::register($this);
 
-    $url = Site::getBaseUrl();
+    $color = '#de3163';
+    $url = 'https://viifm.art';
+    //Site::getBaseUrl();
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
-    <meta name="author" content="Ray Vaigmi" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="yandex-verification" content="934be1dcd43724ac" />
-	<meta property="og:site_name" content="Telegram канал" />
-	<meta property="og:locale" content="ru_RU" />
+    <?php
+        $this->registerMetaTag(['name' => 'theme-color', 'content' => $color]);
+        $this->registerMetaTag(['name' => 'msapplication-navbutton-color', 'content' => $color]);
+        $this->registerMetaTag(['name' => 'apple-mobile-web-app-status-bar-style', 'content' => $color]);    
+        $this->registerMetaTag(['name' => 'author', 'content' => 'Ray Vaigmi']);
+        $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
+        $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
+        $this->registerMetaTag(['name' => 'yandex-verification', 'content' => '934be1dcd43724ac']);
+    ?>
+
     <?php $this->registerCsrfMetaTags();?>
     <title><?= Html::encode($this->title);?></title>
 	
     <?php $this->registerLinkTag(['rel' => 'icon', 'href' => $url.'/favicon.ico']);?>
     <?php $this->registerLinkTag(['rel' => 'shortcut icon', 'href' => $url.'/data/image/favicon.png', 'type' => 'image/x-icon']);?>
     <?php $this->registerLinkTag(['rel' => 'apple-touch-icon', 'href' => $url.'/data/image/logo/vii-fm.jpg']);?>
-
-	<link rel="preconnect" href="https://mc.yandex.ru" />
-	
-    <?php $this->head() ?>
+	<?php $this->registerLinkTag(['rel' => 'preconnect', 'href' => 'https://mc.yandex.ru']);?>
 	<?php $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);?>
+    <?php $this->head(); ?>
 </head>
 <body id="top" class="d-flex flex-column h-100" data-bs-theme="dark">
 <?php $this->beginBody() ?>

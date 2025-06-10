@@ -47,7 +47,10 @@ class Login
                 Html::a(
                     Yii::t('vii', 'Login'), 
                     '/auth/signin', 
-                    ['class' => 'btn btn-lg btn-light py-1 px-4']
+                    [
+                        'class' => 'btn btn-lg btn-light py-1 px-4',
+                        'rel' => 'nofollow noindex'
+                    ]
                 ),
                 ['class' => ['d-grid d-md-flex px-4 px-md-0']]
             );

@@ -1,23 +1,21 @@
 <?php
-    use yii\helpers\Url;
     use yii\helpers\Html;
     $this->title = 'Vii FM. '.Yii::t('vii', 'Beautiful music');
     //Yii::$app->name;
 
-    $color = '#de3163';
-    $url = Url::canonical();
+    $url = 'https://viifm.art';
     $description = 'Погрузитесь в поток необычной и красивой музыки. Свыше 10 000 000 треков! Более чем на 15 языках мира!';
     $image = $url.'/data/image/banner/533465475464362346.jpg';
 
-    $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
     $this->registerMetaTag(['name' => 'keywords', 'content' => 'music, vii, enigma, era, enya, gregorian, achiella']);
     $this->registerMetaTag(['name' => 'name', 'content' => $this->title]);
     $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
     $this->registerMetaTag(['name' => 'image', 'content' => $image]);
 
     // Facebook Meta Tags
-    $this->registerMetaTag(['property' => 'og:url', 'content' => 'https://t.me/viifm_lux']);
     $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:site_name', 'content' => 'Telegram канал']);
+    $this->registerMetaTag(['property' => 'og:locale', 'content' => 'ru_RU']);
     $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
     $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
     $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);
@@ -28,10 +26,6 @@
     $this->registerMetaTag(['name' => 'twitter:title', 'content' => $this->title]);
     $this->registerMetaTag(['name' => 'twitter:description', 'content' => $description]);
     $this->registerMetaTag(['name' => 'twitter:image', 'content' => $image]);
-    
-    $this->registerMetaTag(['name' => 'theme-color', 'content' => $color]);
-    $this->registerMetaTag(['name' => 'msapplication-navbutton-color', 'content' => $color]);
-    $this->registerMetaTag(['name' => 'apple-mobile-web-app-status-bar-style', 'content' => $color]);
 ?>
 
 <div class="site-index">

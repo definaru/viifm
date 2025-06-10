@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /panel/
+Disallow: /auth/
+
 
 Sitemap: https://viifm.art/sitemap.xml

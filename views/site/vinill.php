@@ -1,8 +1,34 @@
 <?php
+    use yii\helpers\Url;
     use yii\bootstrap5\Html;
 
-    $this->title = 'Виниловые пластинки';
-    $this->params['breadcrumbs'][] = $this->title;
+    $this->title = 'Виниловая пластинка "Real Sadness & Other Gregorian Mysteries"';
+    $this->params['breadcrumbs'][] = 'Виниловая пластинка';
+
+    $url = 'https://viifm.art';
+    $description = 'Один из немногих сборников, вышедших на виниле с музыкой в стиле культовой группы Enigma.';
+    $image = $url.'/data/image/vinill/31923948_800_800.jpg';
+
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'music, vii, enigma, disk, gregorian, vinill']);
+    $this->registerMetaTag(['name' => 'name', 'content' => $this->title]);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+    $this->registerMetaTag(['name' => 'image', 'content' => $image]);
+
+    // Facebook Meta Tags
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:site_name', 'content' => 'Telegram канал']);
+    $this->registerMetaTag(['property' => 'og:locale', 'content' => 'ru_RU']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);
+    $this->registerMetaTag(['property' => 'og:image', 'content' => $image]);
+
+    // Twitter Meta Tags
+    $this->registerMetaTag(['name' => 'twitter:card', 'content' => 'summary_large_image']);
+    $this->registerMetaTag(['name' => 'twitter:title', 'content' => $this->title]);
+    $this->registerMetaTag(['name' => 'twitter:description', 'content' => $description]);
+    $this->registerMetaTag(['name' => 'twitter:image', 'content' => $image]);
+
     $agree = Html::a('персональных данных', '/agreement', ['target' => '_blank']);
     $this->registerCss('   
         @charset "UTF-8";
@@ -70,7 +96,64 @@
         .form-check-inputs[checked="true"] {
             background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224px%22%20viewBox%3D%220%20-960%20960%20960%22%20width%3D%2224px%22%20fill%3D%22%2315202b%22%3E%3Cpath%20d%3D%22M382-240%20154-468l57-57%20171%20171%20367-367%2057%2057-424%20424Z%22%2F%3E%3C%2Fsvg%3E);
         }
+        .list-group-item {background-color: #00000026}
     ');
+    $playlist = [
+        [
+            "title" => "Nostradamus",
+            "name" => "Sadeness Part I",
+            "mix" => "",
+            "time" => "04:59"
+        ],
+        [
+            "title" => "Gregoria",
+            "name" => "The Rhythm",
+            "mix" => "",
+            "time" => "05:46"
+        ],
+        [
+            "title" => "Prayers",
+            "name" => "Alleluia",
+            "mix" => "",
+            "time" => "06:17"
+        ],
+        [
+            "title" => "Physical Motion",
+            "name" => "Ave Maria",
+            "mix" => "",
+            "time" => "05:38"
+        ],
+        [
+            "title" => "Ars Mundi",
+            "name" => "Inquisitio",
+            "mix" => "",
+            "time" => "04:52"
+        ],
+        [
+            "title" => "Magna Charta",
+            "name" => "Hymn",
+            "mix" => "",
+            "time" => "06:36"
+        ],
+        [
+            "title" => "Equinox",
+            "name" => "Amen Part II",
+            "mix" => "",
+            "time" => "07:51"
+        ],
+        [
+            "title" => "Trance Dance",
+            "name" => "Tales Of Mystery",
+            "mix" => "(Darkness Version)",
+            "time" => "06:29"
+        ],
+        [
+            "title" => "After One",
+            "name" => "Real Sadness II",
+            "mix" => "(The Happiness Rap)",
+            "time" => "06:46"
+        ]
+    ];
 ?>
 <div class="row align-items-center my-5 pb-5">
     <div class="col-md-5 position-relative">
@@ -95,43 +178,22 @@
     <div class="col-md-7">
         <div class="px-0 px-md-5">
             <h6 class="fw-light text-body-tertiary">The Ultimate Compilation</h6>
-            <h3 class="display-5 fw-bold mb-4">
-                <span>"Real Sadness & Other Gregorian Mysteries"</span>
-            </h3>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Стиль:</div>
-                    New Age, Ambient
+            <h4 class="display-6 fw-bold mb-4">
+                <span>"Real Sadness <br/>& Other Gregorian Mysteries"</span>
+            </h4>
+            <ol class="list-group list-group-numbered">
+                <?php foreach($playlist as $item) { ?>
+                <li class="alert alert-dark list-group-item d-flex justify-content-between align-items-start border-0 mb-1">
+                    <span class="ms-2 me-auto">
+                        <strong><?=$item['title'];?></strong> - <?=$item['name'];?>
+                        <?=$item['mix'] === '' ? '' : Html::tag('i', $item['mix'], ['class' => 'text-body-tertiary d-block d-md-inline-block']);?>
+                    </span>
+                    <span class="badge text-bg-dark bg-secondary-subtle">
+                        <?=$item['time'];?>
+                    </span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Издание:</div>
-                    Оригинал
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Год издания:</div>
-                    1990
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Лейбл:</div>
-                    Dance Street
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Страна:</div>
-                    Германия
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Размер пластинки:</div>
-                    LP
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Состояние:</div>
-                    nm/nm
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
-                    <div class="fw-bold">Винил-код:</div>
-                    DST 30036-1
-                </li>
-            </ul>  
+                <?php } ?>
+            </ol>
             <?php if (Yii::$app->session->hasFlash('orderSubmitted')): ?>
                 <div class="alert alert-success text-center border-0 m-0 d-inline-flex justify-content-center align-items-center gap-2 w-100 mt-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
@@ -162,23 +224,40 @@
         <hr />
     </div>
     <div class="col-md-5">
-        <ol class="d-flex flex-column gap-3 ol_zeros">
-            <li><strong>Nostradamus</strong> - Sadeness Part I</li>
-            <li><strong>Gregoria</strong> - The Rhythm</li>
-            <li><strong>Prayers</strong> - Alleluia</li>
-            <li><strong>Physical Motion</strong> - Ave Maria</li>
-            <li><strong>Ars Mundi</strong> - Inquisitio</li>
-            <li><strong>Magna Charta</strong> - Hymn</li>
-            <li><strong>Equinox</strong> - Amen Part II</li>
-            <li>
-                <strong>Trance Dance</strong> - Tales Of Mystery 
-                <i class="text-body-tertiary d-block d-md-inline-block">(Darkness Version)</i>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Стиль:</div>
+                New Age, Ambient
             </li>
-            <li>
-                <strong>After One</strong> - Real Sadness II 
-                <i class="text-body-tertiary d-block d-md-inline-block">(The Happiness Rap)</i>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Издание:</div>
+                Оригинал
             </li>
-        </ol>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Год издания:</div>
+                1990
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Лейбл:</div>
+                Dance Street
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Страна:</div>
+                Германия
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Размер пластинки:</div>
+                LP
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Состояние:</div>
+                nm/nm
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start bg-transparent list-group-item-danger">
+                <div class="fw-bold">Винил-код:</div>
+                DST 30036-1
+            </li>
+        </ul>
     </div>    
     <div class="col-md-7">
         <p><strong>"Real Sadness & Other Gregorian Mysteries"</strong> - один из немногих сборников, 
@@ -224,7 +303,6 @@
         На виниле издавалась только в Германии и Южной Корее, 
         а посему встречается крайне редко!</p>
     </div>
-    <div class="col-md-12 py-5"><hr /></div>
 </div> 
 
 <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="subscriber" aria-hidden="true">

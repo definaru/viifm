@@ -11,6 +11,7 @@
 <html lang="en" style="height: auto;">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="robots" content="noindex, nofollow" />
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title);?></title>
         <?php $this->head() ?>

@@ -1,10 +1,12 @@
 <?php
+    use yii\helpers\Url;
     use yii\helpers\Html;
     use frontend\panel\models\helper\Text;
     use frontend\components\icons\Icons;
 
     $this->title = 'Блог Vii FM';
     $this->params['breadcrumbs'][] = 'Блог на VC';
+
     $blog = $data['result']['subsite'];
     $url = $blog['url'];
     $name = $blog['name'];
@@ -18,6 +20,9 @@
     $counter = $blog['counters'];
 
     $createdData = 'Создан: '.Yii::$app->formatter->asDate($created, 'php:d F Y г.');
+    $url = Url::canonical();
+    $description = 'Всё о необычной и редкой музыке. События из музыкального мира.';
+    $image = 'https://leonardo.osnova.io/'.$cover['uuid'].'/-/preview/700x/';    
 
     $board = [
         Text::declension($counter['subscribers'], 'подписчик', 'подписчика', 'подписчиков'),
@@ -25,6 +30,27 @@
         Text::declension($counter['comments'], '', '', 'комментариев'),
         Text::declension($counter['subscriptions'], 'подписка', 'подписки', 'подписок')
     ];
+
+    $this->registerMetaTag(['name' => 'keywords', 'content' => 'blog, vii, блог']);
+    $this->registerMetaTag(['name' => 'name', 'content' => $this->title]);
+    $this->registerMetaTag(['name' => 'description', 'content' => $description], 'description');
+    $this->registerMetaTag(['name' => 'image', 'content' => $image]);
+
+    // Facebook Meta Tags
+    $this->registerMetaTag(['property' => 'og:type', 'content' => 'website']);
+    $this->registerMetaTag(['property' => 'og:site_name', 'content' => 'Telegram канал']);
+    $this->registerMetaTag(['property' => 'og:locale', 'content' => 'ru_RU']);
+    $this->registerMetaTag(['property' => 'og:title', 'content' => $this->title]);
+    $this->registerMetaTag(['property' => 'og:url', 'content' => $url]);
+    $this->registerMetaTag(['property' => 'og:description', 'content' => $description]);
+    $this->registerMetaTag(['property' => 'og:image', 'content' => $image]);
+
+    // Twitter Meta Tags
+    $this->registerMetaTag(['name' => 'twitter:card', 'content' => 'summary_large_image']);
+    $this->registerMetaTag(['name' => 'twitter:title', 'content' => $this->title]);
+    $this->registerMetaTag(['name' => 'twitter:description', 'content' => $description]);
+    $this->registerMetaTag(['name' => 'twitter:image', 'content' => $image]);
+
     list($subscriber, $entries, $comments, $subscriptions) = $board;
 
     $this->registerCss("
@@ -37,6 +63,7 @@
         .accent:hover {
             background-color: #222;
         }
+        .card {background-color: #00000026;}
         @media screen and (max-width:767px) {
             .top {
                 top: -45px;
@@ -57,14 +84,14 @@
             <div class="card-header border-0 p-0 overflow-hidden" style="background-color: #<?=$cover['color'];?>;">
                 <img src="https://leonardo.osnova.io/<?=$cover['uuid'];?>/-/preview/700x/" class="w-100" alt="" />
             </div>
-            <div class="card-body bg-body-tertiary position-relative">
+            <div class="card-body bg-transparent position-relative">
                 <div class="position-absolute start-0 w-100 top">
                     <div class="rounded-circle" style="background-color: #<?=$avatar['color']?>;margin: 0 auto;width: 25%;">
                         <img src="https://leonardo.osnova.io/<?=$avatar['uuid'];?>/-/preview/700x/" class="w-100 rounded-circle border border-5" alt="<?=$name;?>" />
                     </div>
                 </div>
             </div>
-            <div class="card-body bg-body-tertiary pt-5 pb-3">
+            <div class="card-body bg-transparent pt-5 pb-3">
                 <?=Html::tag('h5', $name, ['class' => 'card-title fw-bold']);?>
                 <small><?=Html::tag('i', $createdData, ['class' => 'text-lila']);?></small>
                 <?=Html::tag('p', $description, ['class' => 'card-text text-secondary mt-2']);?>
@@ -74,7 +101,7 @@
                     <span class="badge text-bg-dark bg-dark-subtle"><?=$subscriptions;?></span>
                 </p>
             </div>
-            <div class="card-footer bg-body-tertiary border-top-0 d-md-flex d-grid flex-row gap-2 align-items-center">
+            <div class="card-footer bg-transparent border-top-0 d-md-flex d-grid flex-row gap-2 align-items-center">
                 <div class="d-flex gap-2 col-12 col-md-6">
                     <button class="btn btn-dark px-4" data-bs-toggle="modal" data-bs-target="#subscribers"><?=$subscriber;?></button>
                     <button class="btn btn-dark px-4 text-success fw-bold" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Рейтинг блога">+<?=$rating;?></button>
@@ -90,18 +117,18 @@
         ?>
             
             <div class="card mb-4 border-0">
-                <div class="card-header bg-body-tertiary border-0">
+                <div class="card-header bg-transparent border-0">
                     <a href="<?=$item['data']['url'];?>" target="_blank" class="text-decoration-none text-white">
                         <?=Html::tag('h4', $item['data']['title'], ['class' => 'fw-bold title pt-2 pt-2']);?>
                     </a>
                     <i class="text-secondary"><?=Yii::$app->formatter->asDate($item['data']['date'], 'php:d F Y г.');?></i>
                 </div>
-                <div class="card-body bg-body-tertiary blog">
+                <div class="card-body bg-transparent blog">
                     <a href="<?=$item['data']['url'];?>" target="_blank">
                         <?=Html::img('https://leonardo.osnova.io/'.$img.'/-/preview/592x/', ['class' => 'w-100 rounded-3']);?>
                     </a>
                 </div>
-                <div class="card-footer d-flex justify-content-between bg-body-tertiary border-0">
+                <div class="card-footer d-flex justify-content-between bg-transparent border-0">
                     <div class="d-flex gap-3">
                         <?=Html::button(Icons::Heart().$item['data']['likes']['counterLikes'], ['class' => 'btn px-0 btn-outline-light border-0 bg-transparent text-white']);?>
                         <?=Html::button(Icons::Chats().$item['data']['counters']['comments'], ['class' => 'btn px-0 btn-outline-light border-0 bg-transparent text-white']);?>                        
