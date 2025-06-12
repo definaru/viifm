@@ -77,14 +77,12 @@ class SiteController extends Controller
 
         $code = Yii::$app->request->get('code');
         $promo = '';
-        // $promo = basename($collection->url) === 'viifm_lux' ? 
-        //     Yii::t('vii', 'Coming soon') : 
-        //     Yii::t('vii', 'New compilation');
         if($code) {
             return $this->redirect('/auth/signup?code='.$code);
         }
         return $this->render('index', ['promo' => $promo]);
     }
+
 
     public function actionVideo()
     {
@@ -132,7 +130,10 @@ class SiteController extends Controller
     public function actionContact()
     {
         $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->sendEmail(Yii::$app->params['senderEmail'])) {
+        if (
+            $model->load(Yii::$app->request->post()) && 
+            $model->sendEmail(Yii::$app->params['senderEmail'])
+        ) {
             Yii::$app->session->setFlash('contactFormSubmitted');
         } 
         return $this->render('contact', ['model' => $model]);

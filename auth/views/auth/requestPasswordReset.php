@@ -1,7 +1,41 @@
 <?php
+    use yii\web\View;
+    use yii\helpers\Json;
     use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
-    $this->title = 'Request password reset';
+    use frontend\components\toastr\Toastr;
+
+    $this->title = Yii::t('vii', 'Request password reset');
+
+    $text = Yii::$app->session->hasFlash('success') ? 
+        Json::encode(Yii::t('vii', 'Check reset password')) : 
+        Json::encode(Yii::t('vii', 'No reset password'));
+
+    $success = <<<JS
+        toastr.success(
+            $text, '', 
+            {
+                positionClass: 'toast-bottom-left',
+                timeOut: 5000
+            }
+        );    
+    JS;
+
+    $error = <<<JS
+        toastr.error(
+            $text, '', 
+            {
+                positionClass: 'toast-bottom-left',
+                timeOut: 5000
+            }
+        );    
+    JS;
+
+    $script = Yii::$app->session->hasFlash('success') ? $success : '';
+    $script = Yii::$app->session->hasFlash('error') ? $error : '';
+
+    Toastr::Widget();
+    $this->registerJs($script, View::POS_END); 
 
     $email = [
         'template' => '
@@ -20,19 +54,37 @@
     ];
 ?>
 <div class="card-body login-card-body">
-    <?=Html::tag('p', 'Please fill out your email. A link to reset password will be sent there.', ['class' => 'login-box-msg']);?>
+    <?=Html::tag(
+        'p', 
+        Yii::t('vii', 'Please fill out your email'), 
+        ['class' => 'login-box-msg']
+    );?>
     <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
-        <?= $form->field($model, 'email', $email)->textInput(['placeholder' => 'Email'])->label(false);?>
+        <?=$form->field($model, 'email', $email)
+            ->textInput(['placeholder' => Yii::t('vii', 'Email')])
+            ->label(false);
+        ?>
         <div class="form-group">
-            <?= Html::submitButton('Request new password', ['class' => 'btn bg-purple btn-block']) ?>
+            <?=Html::submitButton(
+                Yii::t('vii', 'Request new password'), 
+                ['class' => 'btn bg-purple btn-block']
+            );?>
         </div>
     <?php ActiveForm::end(); ?>
     <div class="text-center">
         <p class="mt-3 mb-1">
-            <?= Html::a('Register a new membership', '/auth/signup', ['class' => 'text-purple']);?>
+            <?= Html::a(
+                Yii::t('vii', 'Register a new account'), 
+                '/auth/signup', 
+                ['class' => 'text-purple text-underline-offset']
+            );?>
         </p>
         <p class="mb-0">
-            <?= Html::a('Login', '/auth/signin', ['class' => 'text-purple']);?>
+            <?= Html::a(
+                Yii::t('vii', 'Login'), 
+                '/auth/signin', 
+                ['class' => 'text-purple text-underline-offset']
+            );?>
         </p>
     </div>
 </div>

@@ -1,14 +1,34 @@
 <?php 
     use yii\web\View; 
+    use yii\helpers\Json;
     use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
     use frontend\components\data\GoogleAuth;
     use frontend\components\icons\Icons;
+    use frontend\components\toastr\Toastr;
+
+    $text = Json::encode(Yii::t('vii', 'Thank you for registration'));
+    $js = <<<JS
+    toastr.success(
+        $text, '', 
+        {
+            positionClass: 'toast-bottom-left',
+            timeOut: 5000
+        }
+    );    
+    JS;
+
+    $action = Yii::$app->session->hasFlash('success') ? $js : '';
+
+    Toastr::Widget();
+    $this->registerJs($action, View::POS_END); 
 
     Yii::$app->assetManager->bundles['yii\bootstrap5\BootstrapAsset'] = false; 
     
     $login = Yii::$app->request->get('login');
-    $title = $login ? 'Авторизация...' : 'Sign in to start your session';
+    $title = $login ? 
+        Yii::t('vii', 'Sign In').'...' : 
+        Yii::t('vii', 'Sign in to start your session');
     $body = $login ? 'd-none' : '';
     $loading = $login ? 'd-flex justify-content-center py-3' : 'd-none';
     $js = $login ? "
@@ -26,7 +46,7 @@
     $g_mail = isset($res["email"]) ? $res["email"] : '';
     $g_password = isset($res["sub"]) ? $res["sub"] : '';
 
-    $this->title = 'Sign In';
+    $this->title = Yii::t('vii', 'Sign In');
     $this->registerCss('
         .social-auth-links p:after {
             content: "";
@@ -87,7 +107,11 @@
 <div class="card-body login-card-body">
     <div class="<?=$loading;?>">
         <div class="spinner-border text-purple" role="status">
-            <span class="sr-only">Loading...</span>
+            <?=Html::tag(
+                'span', 
+                Yii::t('vii', 'Loading').'...', 
+                ['class' => 'sr-only']
+            );?>
         </div>
     </div>
     <?=Html::tag('p', $title, ['class' => 'login-box-msg']);?>
@@ -97,14 +121,14 @@
                 ->textInput([
                     'value' => $g_mail, 
                     'type' => 'email', 
-                    'placeholder' => 'Email'
+                    'placeholder' => Yii::t('vii', 'Email')
                 ])
                 ->label(false);
             ?>
             <?=$form->field($model, 'password', $password)
                 ->passwordInput([
                     'value' => $g_password, 
-                    'placeholder' => 'Password'
+                    'placeholder' => Yii::t('vii', 'Password')
                 ])
                 ->label(false);
             ?>
@@ -112,33 +136,45 @@
                 <div class="col-7">
                     <?=$form->field($model, 'rememberMe')
                         ->checkbox($checkbox)
-                        ->label('Remember Me');
+                        ->label(Yii::t('vii', 'Remember Me'));
                     ?>
                 </div>
                 <div class="col-5">
-                    <?= Html::submitButton('Login', [ // Yii::t('vii', 'Login')
+                    <?= Html::submitButton(Yii::t('vii', 'Login'), [
                         'class' => 'btn bg-purple btn-block', 
                         'name' => 'login-button'
                     ]);?>
                 </div>
             </div>
             <div class="social-auth-links text-center mb-3">
-                <p>OR</p>
+                <?=Html::tag('p', Yii::t('vii', 'OR'));?>
                 <?php /*
                 <a href="#" class="btn btn-block btn-default">
                     <?=Icons::SigninFacebook();?>
-                    Sign in using Facebook
+                    <?=Yii::t('vii', 'Sign in using Facebook');?>
                 </a>
                 */ ?>
 
                 <a href="<?=GoogleAuth::createGoogleAuthUrl()?>" class="btn btn-block btn-default">
                     <?=Icons::SigninGoogle();?> 
-                    Sign in using Google
+                    <?=Yii::t('vii', 'Sign in using Google');?>
                 </a>
             </div>
             <div class="text-center">
-                <p class="mb-1"><?=Html::a('I forgot my password', '/auth/request-password-reset', ['class' => 'text-purple']);?></p>
-                <p class="mb-0"><?=Html::a('Register a new account', '/auth/signup', ['class' => 'text-purple']);?></p>                
+                <p class="mb-1">
+                    <?=Html::a(
+                        Yii::t('vii', 'I forgot my password'), 
+                        '/auth/request-password-reset', 
+                        ['class' => 'text-purple text-underline-offset']
+                    );?>
+                </p>
+                <p class="mb-0">
+                    <?=Html::a(
+                        Yii::t('vii', 'Register a new account'), 
+                        '/auth/signup', 
+                        ['class' => 'text-purple text-underline-offset']
+                    );?>
+                </p>                
             </div>
         <?php ActiveForm::end(); ?>
     </div>

@@ -85,7 +85,7 @@ class AuthController extends Controller
             } else {
                 Yii::$app->session->setFlash(
                     'success', 
-                    'Thank you for registration. Please check your inbox for verification email.'
+                    Yii::t('vii', 'Thank you for registration')
                 );
                 $model->signup();  
                 return $this->redirect('/auth/signin');       
@@ -100,17 +100,10 @@ class AuthController extends Controller
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail()) {
-                Yii::$app->session->setFlash(
-                    'success', 
-                    'Check your email for further instructions.'
-                );
-                return $this->goHome();
+                Yii::$app->session->setFlash('success', '');
+                return $this->redirect('/auth/request-password-reset'); 
             }
-
-            Yii::$app->session->setFlash(
-                'error', 
-                'Sorry, we are unable to reset password for the provided email address.'
-            );
+            Yii::$app->session->setFlash('error', '');
         }
         return $this->render('requestPasswordReset', ['model' => $model]);
     }

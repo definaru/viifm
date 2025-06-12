@@ -2,6 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /panel/
 Disallow: /auth/
+Clean-param: code /
+Clean-param: exext /
+Clean-param: _pjax /contact
 
 
 Sitemap: https://viifm.art/sitemap.xml

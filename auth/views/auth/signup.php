@@ -2,17 +2,19 @@
     use yii\web\View; 
     use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
-    $this->title = 'Sign Up';
+    $this->title = Yii::t('vii', 'Sign Up');
 
     $code = Yii::$app->request->get('code');
-    $title = $code ? 'Авторизация...' : 'Register a new membership';
+    $title = $code ?
+        Yii::t('vii', 'Sign In').'...' : 
+        Yii::t('vii', 'Register a new account');
+
     $body = $code ? 'd-none' : '';
     $loading = $code ? 'd-flex justify-content-center py-3' : 'd-none';
     $js = $code ? "
     window.onload = function() {
         const urlParams = new URLSearchParams(window.location.search);
         const code = urlParams.get('code');
-
         if (code) {
             document.getElementById('form-signup').submit();
         }
@@ -72,26 +74,56 @@
 <div class="card-body login-card-body">
     <div class="<?=$loading;?>">
         <div class="spinner-border text-purple" role="status">
-            <span class="sr-only">Loading...</span>
+            <?=Html::tag(
+                'span', 
+                Yii::t('vii', 'Loading').'...', 
+                ['class' => 'sr-only']
+            );?>
         </div>
     </div>
     <?=Html::tag('p', $title, ['class' => 'login-box-msg']);?>
     <div class="<?=$body;?>">
         <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
-            <?= $form->field($model, 'username', $username)->textInput(['placeholder' => 'Full name', 'value' => $g_name])->label(false);?>
-            <?= $form->field($model, 'email', $email)->textInput(['placeholder' => 'Email', 'value' => $g_email])->label(false);?>
-            <?= $form->field($model, 'password', $password)->passwordInput(['placeholder' => 'Password', 'value' => $g_password])->label(false);?>
+            <?=$form->field($model, 'username', $username)
+                ->textInput([
+                    'placeholder' => Yii::t('vii', 'Full name'), 
+                    'value' => $g_name
+                ])
+                ->label(false);
+            ?>
+            <?=$form->field($model, 'email', $email)
+                ->textInput([
+                    'placeholder' => Yii::t('vii', 'Email'), 
+                    'value' => $g_email
+                ])
+                ->label(false);
+            ?>
+            <?=$form->field($model, 'password', $password)
+                ->passwordInput([
+                    'placeholder' => Yii::t('vii', 'Password'), 
+                    'value' => $g_password
+                ])
+                ->label(false);
+            ?>
             <div class="form-group">
-                <?= Html::submitButton('Register', ['class' => 'btn bg-purple btn-block', 'name' => 'signup-button']) ?>
+                <?=Html::submitButton(
+                    Yii::t('vii', 'Sign Up'), 
+                    [
+                        'class' => 'btn bg-purple btn-block', 
+                        'name' => 'signup-button'
+                    ]
+                );?>
             </div>
         <?php ActiveForm::end(); ?>
-        <div>
-            <?=Html::a(
-                'I already have a membership', 
-                '/auth/signin', 
-                ['class' => 'btn btn-block btn-dark']
-            );?>
-        </div>        
+        <div class="text-center">
+            <p class="mb-0">
+                <?= Html::a(
+                    Yii::t('vii', 'Login'), 
+                    '/auth/signin', 
+                    ['class' => 'text-purple text-underline-offset']
+                );?>
+            </p>             
+        </div>
     </div>
 </div>
 <hr class="m-0" />
