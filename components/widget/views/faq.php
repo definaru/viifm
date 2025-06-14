@@ -28,7 +28,7 @@ use yii\helpers\Markdown;
                 aria-labelledby="heading-<?=$faq->id;?>" 
                 data-bs-parent="#faqAccordion"
             >
-                <div class="accordion-body rounded-bottom border border-top-0">
+                <div class="accordion-body rounded-bottom border-0">
                     <?= Markdown::process($faq->body, 'gfm') ?>
                 </div>
             </div>

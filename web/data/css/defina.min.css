@@ -92,7 +92,7 @@ main > .container, main > .container-fluid
 }
 .btn-vii:hover {
     background: #DE3163;
-    color: #000;
+    color: #fff;
 }
 .nav-link:hover {
     color: #DE3163;
@@ -116,13 +116,24 @@ main > .container, main > .container-fluid
 }
 .accordion-button:not(.collapsed) {
     color: #fff;
-    background-color: #15202b;
-    border: 1px solid #495057 !important;
-    border-bottom: none !important;
+    background-color: transparent;
+    border: none !important;
     box-shadow: none;
     font-weight: 900;
 }
-.accordion-body {background-color: #15202b}
+.accordion-item {background-color: #00000029;}
+.accordion-body a {
+    color: #DE3163;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #87364d;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;
+}
+.accordion-body a:hover {color: #fff;}
 .logo {
     height:35px;
 }
