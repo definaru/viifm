@@ -3,12 +3,15 @@
     use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
     use frontend\components\icons\Icons;
+    use frontend\components\data\SocialLinkData;
 
     $this->title = Yii::t('vii', 'Contacts');
     $this->params['breadcrumbs'][] = $this->title;
 
     $url = Url::canonical();
     $description = Yii::t('vii', 'description_contacts');
+    $social_link_class = 'btn btn-love px-4 d-inline-flex justify-content-center align-items-center gap-2';
+    $social_link = SocialLinkData::links();
 
     $this->registerMetaTag(['name' => 'robots', 'content' => 'index, follow']);
     $this->registerMetaTag(['name' => 'keywords', 'content' => 'контакты, music, vii, enigma, achiella']);
@@ -47,22 +50,20 @@
                 ), 
                 ['class' => 'text-body-secondary']
             );?>  
-            <p><?=Icons::Location(30, 'text-vii');?> Eesti, Järvamaa, Paide 72715</p>
+
+            <?=Html::tag('p', Icons::Location(30, 'text-vii').' '.Yii::$app->params['address']);?>
+
             <div class="d-flex gap-2 align-items-center">
-                <a 
-                    href="https://t.me/viifm_lux" 
-                    class="btn btn-love px-4 d-inline-flex justify-content-center align-items-center gap-2" 
-                    target="_blank"
-                >
-                    <?=Icons::Telegram(16);?> Telegram
-                </a>            
-                <a 
-                    href="https://x.com/vii_fm" 
-                    class="btn btn-love px-4 d-inline-flex justify-content-center align-items-center gap-2" 
-                    target="_blank"
-                >
-                    <?=Icons::Twitter(16);?> Twitter
-                </a>            
+                <?php foreach($social_link as $item) { $icon = $item['icon']; ?>
+                    <?=Html::a(
+                        Icons::$icon($item['size_icon']).' '.$item['name'],
+                        $item['href'],
+                        [
+                            'class' => $social_link_class,
+                            'target' => '_blank'
+                        ]
+                    );?>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -123,8 +124,7 @@
                             <?=Html::tag('small', Icons::Lock(16).Yii::t('vii', 'data security'));?>                     
                         </div>
                     <?php ActiveForm::end(); ?>                     
-                <?php endif ; ?> 
-       
+                <?php endif ; ?>
             </div>
         </div>
     </div>

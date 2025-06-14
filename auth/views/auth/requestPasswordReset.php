@@ -7,9 +7,7 @@
 
     $this->title = Yii::t('vii', 'Request password reset');
 
-    $text = Yii::$app->session->hasFlash('success') ? 
-        Json::encode(Yii::t('vii', 'Check reset password')) : 
-        Json::encode(Yii::t('vii', 'No reset password'));
+    $text = Json::encode(Yii::t('vii', 'Check reset password'));
 
     $success = <<<JS
         toastr.success(
@@ -21,18 +19,8 @@
         );    
     JS;
 
-    $error = <<<JS
-        toastr.error(
-            $text, '', 
-            {
-                positionClass: 'toast-bottom-left',
-                timeOut: 5000
-            }
-        );    
-    JS;
 
     $script = Yii::$app->session->hasFlash('success') ? $success : '';
-    $script = Yii::$app->session->hasFlash('error') ? $error : '';
 
     Toastr::Widget();
     $this->registerJs($script, View::POS_END); 
@@ -64,6 +52,9 @@
             ->textInput(['placeholder' => Yii::t('vii', 'Email')])
             ->label(false);
         ?>
+        <?php if(Yii::$app->session->hasFlash('error')) { ?>
+            <p class="text-danger"><?=Yii::t('vii', 'No reset password');?></p>
+        <?php } ?>
         <div class="form-group">
             <?=Html::submitButton(
                 Yii::t('vii', 'Request new password'), 

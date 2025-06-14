@@ -1,7 +1,6 @@
 <?php
     use yii\helpers\Html;
     use backend\assets\BackendAsset;
-    use common\widgets\Alert;
     BackendAsset::register($this);
     $auth = isset($this->blocks['auth']) ? $this->blocks['auth'] : '';
 ?>
@@ -15,6 +14,7 @@
         <?= Html::csrfMetaTags() ?>
         <title><?=Html::encode($this->title);?></title>
         <?php $this->head() ?>
+        
     </head>
     <body class="login-page">
         <?php $this->beginBody() ?>
@@ -23,7 +23,6 @@
                 <a href="/"><b class="text-purple">Vii</b> FM</a>
             </div>
             <main class="card">
-                <?=Alert::widget();?>
                 <?=$content;?>
                 <div class="card-footer text-center bg-white">
                     <footer>
