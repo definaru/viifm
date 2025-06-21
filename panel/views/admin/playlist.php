@@ -9,7 +9,7 @@
 
     Toastr::Widget();
 
-    $totalCount = $data['status'] === 'error' ? $dataProvider->totalCount : $data['total'];
+    $totalCount = isset($data['total']) ? $data['total'] : $dataProvider->totalCount;
     $total_music = Text::declension($totalCount, 'трек', 'трека', 'треков');
     $total = explode(' ', $total_music);
     $totals = number_format($total[0]).' '.$total[1];
@@ -23,7 +23,19 @@
 ?>
 
 <div class="row">
+
     <?php /*
+    <?php if($data['status'] === 'error') { ?>
+        <div class="col-12">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong><?=ucfirst($data['status']);?>:</strong> &#160;
+                <?=json_decode(explode('response:', $data['error'])[1], true)["error"]["message"];?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>            
+        </div>
+    <?php } ?>    
         <?php if (Yii::$app->session->hasFlash('exception')) { ?>
             <p class="text-danger border border-danger p-4"><?=Yii::$app->session->getFlash('exception');?></p>
         <?php } ?>    
@@ -34,7 +46,7 @@
             'close' => false,
             'styleClass' => 'p-0'
         ]); ?>
-            <?php if($data['status'] !== 'error') { ?>
+            <?php if(isset($data['total'])) { ?>
                 <?php if (Yii::$app->session->hasFlash('success')) { ?>
                     <p class="bg-success text-white px-3 py-2"><?=Yii::$app->session->getFlash('success');?></p>
                 <?php } ?>
@@ -53,7 +65,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if($data['status'] === 'error') { ?>
+                        <?php if(empty($data['total'])) { ?>
                             <tr class="border-bottom">
                                 <td colspan="6" class="p-4">
                                     <div class="alert alert-danger m-0" role="alert">
@@ -131,7 +143,7 @@
                 <div class="p-3">
                     <nav aria-label="navigation">
                         <ul class="pagination m-0">
-                            <?php if($previous[1] !== '') { ?>
+                            <?php if($data['previous'] !== null) { ?>
                             <li class="page-item">
                                 <?=Html::a(
                                     '&laquo; Previous', 

@@ -13,7 +13,7 @@ class TGStatAPI
     public $url;
 
 
-    public static function Request($method = 'GET', $query, $params = [])
+    public static function Request($method = 'GET', $query = '', $params = [])
     {
         $url = Yii::$app->tgstat->url.$query;
         try {

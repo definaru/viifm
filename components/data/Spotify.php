@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
 
 class Spotify
 {
-    public static function Request($method = 'GET', $url, $params = [])
+    public static function Request($method = 'GET', $url = '', $params = [])
     {
         //$url = 'https://api.spotify.com/v1/';
         try {

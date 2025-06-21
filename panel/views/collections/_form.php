@@ -17,7 +17,7 @@
     $type = $model->isNewRecord || empty($model->image) ? 'file' : 'hidden';
     $button = $model->isNewRecord ? 'Создать' : 'Сохранить';
     $color = $model->isNewRecord ? 'btn bg-purple px-5' : 'btn btn-success px-5';
-    $model->tags = explode(', ', $model->tags);
+    $model->tags = isset($model->tags) ? explode(', ', $model->tags) : '';
     $image = isset($model->image) ? 
         $model->image : 
         'https://dummyimage.com/800x800/f4f6f9/343a40&text=No picture';

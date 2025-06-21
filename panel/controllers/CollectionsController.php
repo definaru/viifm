@@ -52,7 +52,7 @@ class CollectionsController extends Controller
     public function actionUpdate($id)
     {
         $model = Collections::findOne($id);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
             $model->tags = implode(', ', $model->tags);
             $model->upload();
             if ($model->save()) {

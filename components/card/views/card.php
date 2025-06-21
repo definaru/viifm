@@ -25,7 +25,7 @@
                 );?>
                 <div class="dropdown-menu dropdown-menu-right" role="menu">
                     <?php foreach($date as $item) { 
-                        $option = $item['target'] ? 
+                        $option = isset($item['target']) ? 
                             ['class' => 'dropdown-item', 'target' => '_blank'] : 
                             ['class' => 'dropdown-item'];
                         $divider = $item['divider'] == '-' ? Html::tag('div', '', ['class' => 'dropdown-divider']) : null;

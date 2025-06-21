@@ -201,17 +201,12 @@ class AdminController extends Controller
             foreach ($data['items'] as &$item) {
                 $uid = $item['track']['id'] ?? null;
                 $item['track']['id_collection'] = $uid && isset($dbTracks[$uid]) ? $dbTracks[$uid]->id_collection : '';
-                // if ($uid && isset($dbTracks[$uid])) {
-                //     $item['track']['id_collection'] = $dbTracks[$uid]->id_collection;
-                // } else {
-                //     $item['track']['id_collection'] = '';
-                // }
             }
             unset($item);
             return $this->render('playlist', ['data' => $data]);
         } else {
             $dataProvider = new ActiveDataProvider([
-                'query' => Track::find(),
+                'query' => Track::find()->orderBy(['datetime' => SORT_DESC]),
                 'pagination' => [
                     'pageSize' => $limit,
                 ],
